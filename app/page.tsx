@@ -5,6 +5,7 @@ import { buttonVariants } from "@/components/ui/button"
 import { CardDemo } from "@/components/CardDemo"
 import { AccordionDemo } from "@/components/AccordionDemo"
 import Box from "@/components/Box"
+import { AlertDemo } from "@/components/AlertDemo"
 
 export default function IndexPage() {
   return (
@@ -43,6 +44,9 @@ export default function IndexPage() {
 
       <Box title="Accordion" desc="折叠组件">
       <AccordionDemo/>
+      </Box>
+      <Box title="Alert" desc="Displays a callout for user attention.">
+        <AlertDemo/>
       </Box>
     </section>
   )
