@@ -10,6 +10,7 @@ import { AlertDialogDemo } from "@/components/AlertDialogDemo"
 import { AspectRatioDemo } from "@/components/AspectRatioDemo"
 import { AvatarDemo } from "@/components/AvatarDemo"
 import { BadgeDemo } from "@/components/BadgeDemo"
+import { ButtonDemo } from "@/components/ButtonDemo"
 
 export default function IndexPage() {
   return (
@@ -63,6 +64,10 @@ export default function IndexPage() {
       </Box>
       <Box title="Badge" desc="Displays a badge or a component that looks like a badge.">
         <BadgeDemo/>
+      </Box>
+
+      <Box title="Button" desc="Displays a button or a component that looks like a button.">
+        <ButtonDemo/>
       </Box>
     </section>
   )
