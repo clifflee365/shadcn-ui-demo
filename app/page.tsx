@@ -11,6 +11,10 @@ import { AspectRatioDemo } from "@/components/AspectRatioDemo"
 import { AvatarDemo } from "@/components/AvatarDemo"
 import { BadgeDemo } from "@/components/BadgeDemo"
 import { ButtonDemo } from "@/components/ButtonDemo"
+import { CalendarDemo } from "@/components/CalendarDemo"
+import { CalendarDatePicker } from "@/components/CalendarDatePickerDemo"
+import { CalendarDateRangePicker } from "@/components/CalendarDateRangePickerDemo"
+import { CalendarDatePickerWithPresets } from "@/components/CalendarDatePickerWithPresetsDemo"
 
 export default function IndexPage() {
   return (
@@ -68,6 +72,15 @@ export default function IndexPage() {
 
       <Box title="Button" desc="Displays a button or a component that looks like a button.">
         <ButtonDemo/>
+      </Box>
+
+      <Box title="Calendar" desc="A date field component that allows users to enter and edit date.">
+        <CalendarDemo/>
+        <section className="flex flex-col gap-4">
+          <CalendarDatePicker/>
+          <CalendarDateRangePicker/>
+          <CalendarDatePickerWithPresets/>
+        </section>
       </Box>
     </section>
   )
