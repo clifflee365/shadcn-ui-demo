@@ -8,6 +8,7 @@ import Box from "@/components/Box"
 import { AlertDemo } from "@/components/AlertDemo"
 import { AlertDialogDemo } from "@/components/AlertDialogDemo"
 import { AspectRatioDemo } from "@/components/AspectRatioDemo"
+import { AvatarDemo } from "@/components/AvatarDemo"
 
 export default function IndexPage() {
   return (
@@ -55,6 +56,9 @@ export default function IndexPage() {
       </Box>
       <Box title="Aspect Ratio" desc="Displays content within a desired ratio.">
         <AspectRatioDemo/>
+      </Box>
+      <Box title="Avatar" desc="An image element with a fallback for representing the user.">
+        <AvatarDemo/>
       </Box>
     </section>
   )
