@@ -18,6 +18,12 @@ import { CardDemo } from "@/components/CardDemo"
 import { CardWithForm } from "@/components/CardWithFormDemo"
 import { CheckboxDemo } from "@/components/CheckboxDmeo"
 import { CollapsibleDemo } from "@/components/CollapsibleDemo"
+import { CommandDemo } from "@/components/CommandDemo"
+import { CommandDialogDemo } from "@/components/CommandDialogDemo"
+import { CommandMenu } from "@/components/CommandMenu"
+import { CommandCombobox } from "@/components/CommandComboboxDemo"
+import { CommandPopover } from "@/components/CommandPopoverDemo"
+import { CommandDropdownMenu } from "@/components/CommandDropdownMenuDemo"
 
 export default function IndexPage() {
   return (
@@ -117,7 +123,24 @@ export default function IndexPage() {
         desc="An interactive component which expands/collapses a panel."
         className="min-h-[400px]"
       >
-        <CollapsibleDemo/>
+        <CollapsibleDemo />
+      </Box>
+
+      <Box
+        title="Command K"
+        desc="Fast, composable, unstyled command menu for React."
+      >
+        <div className="flex flex-col gap-5">
+          <div className="flex min-h-[350px] w-[400px] items-start justify-center p-10">
+            <CommandDemo />
+          </div>
+          <CommandDialogDemo />
+          <p>隐藏的快捷键:Cmd+K 唤起全局搜索菜单</p>
+          <CommandMenu/>
+          <CommandCombobox/>
+          <CommandPopover/>
+          <CommandDropdownMenu/>
+        </div>
       </Box>
     </section>
   )
