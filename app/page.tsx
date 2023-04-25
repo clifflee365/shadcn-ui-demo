@@ -7,6 +7,7 @@ import { AccordionDemo } from "@/components/AccordionDemo"
 import Box from "@/components/Box"
 import { AlertDemo } from "@/components/AlertDemo"
 import { AlertDialogDemo } from "@/components/AlertDialogDemo"
+import { AspectRatioDemo } from "@/components/AspectRatioDemo"
 
 export default function IndexPage() {
   return (
@@ -51,6 +52,9 @@ export default function IndexPage() {
       </Box>
       <Box title="AlertDialog" desc="A modal dialog that interrupts the user with important content and expects a response.">
         <AlertDialogDemo/>
+      </Box>
+      <Box title="Aspect Ratio" desc="Displays content within a desired ratio.">
+        <AspectRatioDemo/>
       </Box>
     </section>
   )
