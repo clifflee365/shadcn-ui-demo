@@ -3,6 +3,7 @@ import Link from "next/link"
 import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
 import { CardDemo } from "@/components/CardDemo"
+import { CardWithForm } from "@/components/CardWithFormDemo"
 import { AccordionDemo } from "@/components/AccordionDemo"
 import Box from "@/components/Box"
 import { AlertDemo } from "@/components/AlertDemo"
@@ -48,7 +49,10 @@ export default function IndexPage() {
         </Link>
       </div>
       <Box title="Card" desc="卡片组件">
-      <CardDemo/>
+        <div className="flex gap-4">
+        <CardDemo/>
+        <CardWithForm/>
+        </div>
       </Box>
 
       <Box title="Accordion" desc="折叠组件">
