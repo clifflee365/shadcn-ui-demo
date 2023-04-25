@@ -2,14 +2,13 @@ import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
-
-import Box from "@/components/Box"
 import { AccordionDemo } from "@/components/AccordionDemo"
 import { AlertDemo } from "@/components/AlertDemo"
 import { AlertDialogDemo } from "@/components/AlertDialogDemo"
 import { AspectRatioDemo } from "@/components/AspectRatioDemo"
 import { AvatarDemo } from "@/components/AvatarDemo"
 import { BadgeDemo } from "@/components/BadgeDemo"
+import Box from "@/components/Box"
 import { ButtonDemo } from "@/components/ButtonDemo"
 import { CalendarDatePicker } from "@/components/CalendarDatePickerDemo"
 import { CalendarDatePickerWithPresets } from "@/components/CalendarDatePickerWithPresetsDemo"
@@ -18,6 +17,7 @@ import { CalendarDemo } from "@/components/CalendarDemo"
 import { CardDemo } from "@/components/CardDemo"
 import { CardWithForm } from "@/components/CardWithFormDemo"
 import { CheckboxDemo } from "@/components/CheckboxDmeo"
+import { CollapsibleDemo } from "@/components/CollapsibleDemo"
 
 export default function IndexPage() {
   return (
@@ -110,6 +110,14 @@ export default function IndexPage() {
         desc="A control that allows the user to toggle between checked and not checked."
       >
         <CheckboxDemo />
+      </Box>
+
+      <Box
+        title="Collapsible"
+        desc="An interactive component which expands/collapses a panel."
+        className="min-h-[400px]"
+      >
+        <CollapsibleDemo/>
       </Box>
     </section>
   )

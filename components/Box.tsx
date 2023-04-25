@@ -1,11 +1,14 @@
+import { cn } from "@/lib/utils"
+
 interface IBoxProps {
   title?: string
   desc?: string
+  className?: string
   children: React.ReactNode
 }
-const Box = ({ children, title, desc }: IBoxProps) => {
+const Box = ({ className, children, title, desc }: IBoxProps) => {
   return (
-    <div className="flex flex-col rounded-md border p-4">
+    <div className={cn("flex flex-col rounded-md border p-4", className)}>
       <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
         {title}
       </h2>
