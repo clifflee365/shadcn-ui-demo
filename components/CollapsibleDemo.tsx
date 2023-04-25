@@ -52,6 +52,15 @@ export function CollapsibleDemo() {
           </div>
         </CollapsibleContent>
       </Collapsible>
+
+      <Collapsible>
+        <CollapsibleTrigger>
+          点击查看更多内容 ↓
+        </CollapsibleTrigger>
+        <CollapsibleContent>
+        壹贰叁肆伍陆柒捌玖拾壹贰叁肆伍陆柒捌玖拾壹贰叁肆伍陆柒捌玖拾壹贰叁肆伍陆柒捌玖拾
+        </CollapsibleContent>
+      </Collapsible>
     </div>
   )
 }
