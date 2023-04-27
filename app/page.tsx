@@ -25,6 +25,7 @@ import { CommandCombobox } from "@/components/CommandComboboxDemo"
 import { CommandPopover } from "@/components/CommandPopoverDemo"
 import { CommandDropdownMenu } from "@/components/CommandDropdownMenuDemo"
 import { ContextMenuDemo } from "@/components/ContextMenuDemo"
+import { DialogDemo } from "@/components/DialogDemo"
 
 export default function IndexPage() {
   return (
@@ -146,6 +147,10 @@ export default function IndexPage() {
 
       <Box title="Context Menu" desc="Displays a menu to the user — such as a set of actions or functions — triggered by a button.">
         <ContextMenuDemo/>
+      </Box>
+
+      <Box title="Dialog" desc="A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.">
+        <DialogDemo/>
       </Box>
     </section>
   )
