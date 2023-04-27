@@ -24,6 +24,7 @@ import { CommandMenu } from "@/components/CommandMenu"
 import { CommandCombobox } from "@/components/CommandComboboxDemo"
 import { CommandPopover } from "@/components/CommandPopoverDemo"
 import { CommandDropdownMenu } from "@/components/CommandDropdownMenuDemo"
+import { ContextMenuDemo } from "@/components/ContextMenuDemo"
 
 export default function IndexPage() {
   return (
@@ -141,6 +142,10 @@ export default function IndexPage() {
           <CommandPopover/>
           <CommandDropdownMenu/>
         </div>
+      </Box>
+
+      <Box title="Context Menu" desc="Displays a menu to the user — such as a set of actions or functions — triggered by a button.">
+        <ContextMenuDemo/>
       </Box>
     </section>
   )
