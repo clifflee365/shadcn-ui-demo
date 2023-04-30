@@ -28,6 +28,8 @@ import { ContextMenuDemo } from "@/components/ContextMenuDemo"
 import { DialogDemo } from "@/components/DialogDemo"
 import { DropdownMenuDemo } from "@/components/DropdownMenuDemo"
 import { DropdownMenuSimpleDemo } from "@/components/DropdownMenuSimpleDemo"
+import { DropdownMenuCheckboxes } from "@/components/DropdownMenuCheckboxDemo"
+import { DropdownMenuRadioGroupDemo } from "@/components/DropdownMenuRadioGroupDemo"
 
 export default function IndexPage() {
   return (
@@ -168,6 +170,8 @@ export default function IndexPage() {
         <div className="flex gap-4">
           <DropdownMenuDemo />
           <DropdownMenuSimpleDemo />
+          <DropdownMenuCheckboxes />
+          <DropdownMenuRadioGroupDemo/>
         </div>
       </Box>
     </section>
