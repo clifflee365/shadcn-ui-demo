@@ -18,14 +18,16 @@ import { CardDemo } from "@/components/CardDemo"
 import { CardWithForm } from "@/components/CardWithFormDemo"
 import { CheckboxDemo } from "@/components/CheckboxDmeo"
 import { CollapsibleDemo } from "@/components/CollapsibleDemo"
+import { CommandCombobox } from "@/components/CommandComboboxDemo"
 import { CommandDemo } from "@/components/CommandDemo"
 import { CommandDialogDemo } from "@/components/CommandDialogDemo"
-import { CommandMenu } from "@/components/CommandMenu"
-import { CommandCombobox } from "@/components/CommandComboboxDemo"
-import { CommandPopover } from "@/components/CommandPopoverDemo"
 import { CommandDropdownMenu } from "@/components/CommandDropdownMenuDemo"
+import { CommandMenu } from "@/components/CommandMenu"
+import { CommandPopover } from "@/components/CommandPopoverDemo"
 import { ContextMenuDemo } from "@/components/ContextMenuDemo"
 import { DialogDemo } from "@/components/DialogDemo"
+import { DropdownMenuDemo } from "@/components/DropdownMenuDemo"
+import { DropdownMenuSimpleDemo } from "@/components/DropdownMenuSimpleDemo"
 
 export default function IndexPage() {
   return (
@@ -138,19 +140,35 @@ export default function IndexPage() {
           </div>
           <CommandDialogDemo />
           <p>隐藏的快捷键:Cmd+K 唤起全局搜索菜单</p>
-          <CommandMenu/>
-          <CommandCombobox/>
-          <CommandPopover/>
-          <CommandDropdownMenu/>
+          <CommandMenu />
+          <CommandCombobox />
+          <CommandPopover />
+          <CommandDropdownMenu />
         </div>
       </Box>
 
-      <Box title="Context Menu" desc="Displays a menu to the user — such as a set of actions or functions — triggered by a button.">
-        <ContextMenuDemo/>
+      <Box
+        title="Context Menu"
+        desc="Displays a menu to the user — such as a set of actions or functions — triggered by a button."
+      >
+        <ContextMenuDemo />
       </Box>
 
-      <Box title="Dialog" desc="A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.">
-        <DialogDemo/>
+      <Box
+        title="Dialog"
+        desc="A window overlaid on either the primary window or another dialog window, rendering the content underneath inert."
+      >
+        <DialogDemo />
+      </Box>
+
+      <Box
+        title="Dropdown Menu"
+        desc="Displays a menu to the user — such as a set of actions or functions — triggered by a button."
+      >
+        <div className="flex gap-4">
+          <DropdownMenuDemo />
+          <DropdownMenuSimpleDemo />
+        </div>
       </Box>
     </section>
   )
