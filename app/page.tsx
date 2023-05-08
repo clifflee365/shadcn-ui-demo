@@ -32,6 +32,7 @@ import { DropdownMenuRadioGroupDemo } from "@/components/DropdownMenuRadioGroupD
 import { DropdownMenuSimpleDemo } from "@/components/DropdownMenuSimpleDemo"
 import { HoverCardDemo } from "@/components/HoverCardDemo"
 import { InputDemo } from "@/components/InputDemo"
+import { LabelDemo } from "@/components/LabelDemo"
 
 export default function IndexPage() {
   return (
@@ -189,6 +190,10 @@ export default function IndexPage() {
         desc="Displays a form input field or a component that looks like an input field."
       >
         <InputDemo />
+      </Box>
+
+      <Box title="Label" desc="Renders an accessible label associated with controls.">
+        <LabelDemo/>
       </Box>
     </section>
   )
