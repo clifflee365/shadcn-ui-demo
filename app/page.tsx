@@ -26,11 +26,12 @@ import { CommandMenu } from "@/components/CommandMenu"
 import { CommandPopover } from "@/components/CommandPopoverDemo"
 import { ContextMenuDemo } from "@/components/ContextMenuDemo"
 import { DialogDemo } from "@/components/DialogDemo"
-import { DropdownMenuDemo } from "@/components/DropdownMenuDemo"
-import { DropdownMenuSimpleDemo } from "@/components/DropdownMenuSimpleDemo"
 import { DropdownMenuCheckboxes } from "@/components/DropdownMenuCheckboxDemo"
+import { DropdownMenuDemo } from "@/components/DropdownMenuDemo"
 import { DropdownMenuRadioGroupDemo } from "@/components/DropdownMenuRadioGroupDemo"
+import { DropdownMenuSimpleDemo } from "@/components/DropdownMenuSimpleDemo"
 import { HoverCardDemo } from "@/components/HoverCardDemo"
+import { InputDemo } from "@/components/InputDemo"
 
 export default function IndexPage() {
   return (
@@ -172,12 +173,22 @@ export default function IndexPage() {
           <DropdownMenuDemo />
           <DropdownMenuSimpleDemo />
           <DropdownMenuCheckboxes />
-          <DropdownMenuRadioGroupDemo/>
+          <DropdownMenuRadioGroupDemo />
         </div>
       </Box>
 
-      <Box title="Hover Card" desc="For sighted users to preview content available behind a link.">
-        <HoverCardDemo/>
+      <Box
+        title="Hover Card"
+        desc="For sighted users to preview content available behind a link."
+      >
+        <HoverCardDemo />
+      </Box>
+
+      <Box
+        title="Input"
+        desc="Displays a form input field or a component that looks like an input field."
+      >
+        <InputDemo />
       </Box>
     </section>
   )
