@@ -30,6 +30,7 @@ import { DropdownMenuDemo } from "@/components/DropdownMenuDemo"
 import { DropdownMenuSimpleDemo } from "@/components/DropdownMenuSimpleDemo"
 import { DropdownMenuCheckboxes } from "@/components/DropdownMenuCheckboxDemo"
 import { DropdownMenuRadioGroupDemo } from "@/components/DropdownMenuRadioGroupDemo"
+import { HoverCardDemo } from "@/components/HoverCardDemo"
 
 export default function IndexPage() {
   return (
@@ -173,6 +174,10 @@ export default function IndexPage() {
           <DropdownMenuCheckboxes />
           <DropdownMenuRadioGroupDemo/>
         </div>
+      </Box>
+
+      <Box title="Hover Card" desc="For sighted users to preview content available behind a link.">
+        <HoverCardDemo/>
       </Box>
     </section>
   )
