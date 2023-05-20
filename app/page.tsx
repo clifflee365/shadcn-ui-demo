@@ -35,6 +35,8 @@ import { InputDemo } from "@/components/InputDemo"
 import { LabelDemo } from "@/components/LabelDemo"
 import { MenubarDemo } from "@/components/MenubarDemo"
 import { MenubarSimpleDemo } from "@/components/MenubarSimpleDemo"
+import { NavigationMenuDemo } from "@/components/NavigationMenuDemo"
+import { NavigationMenuSimpleDemo } from "@/components/NavigationMenuSimpleDemo"
 
 export default function IndexPage() {
   return (
@@ -209,6 +211,15 @@ export default function IndexPage() {
           <MenubarDemo />
           <MenubarSimpleDemo />
         </div>
+      </Box>
+
+      <Box
+        title="Navigation Menu"
+        desc="A collection of links for navigating websites."
+        className="flex gap-4"
+      >
+        <NavigationMenuDemo />
+        <NavigationMenuSimpleDemo />
       </Box>
     </section>
   )
