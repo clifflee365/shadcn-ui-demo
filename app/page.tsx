@@ -33,6 +33,8 @@ import { DropdownMenuSimpleDemo } from "@/components/DropdownMenuSimpleDemo"
 import { HoverCardDemo } from "@/components/HoverCardDemo"
 import { InputDemo } from "@/components/InputDemo"
 import { LabelDemo } from "@/components/LabelDemo"
+import { MenubarDemo } from "@/components/MenubarDemo"
+import { MenubarSimpleDemo } from "@/components/MenubarSimpleDemo"
 
 export default function IndexPage() {
   return (
@@ -192,8 +194,21 @@ export default function IndexPage() {
         <InputDemo />
       </Box>
 
-      <Box title="Label" desc="Renders an accessible label associated with controls.">
-        <LabelDemo/>
+      <Box
+        title="Label"
+        desc="Renders an accessible label associated with controls."
+      >
+        <LabelDemo />
+      </Box>
+
+      <Box
+        title="Menubar"
+        desc="A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands."
+      >
+        <div className="flex gap-4">
+          <MenubarDemo />
+          <MenubarSimpleDemo />
+        </div>
       </Box>
     </section>
   )
