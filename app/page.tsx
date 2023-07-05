@@ -37,6 +37,7 @@ import { MenubarDemo } from "@/components/MenubarDemo"
 import { MenubarSimpleDemo } from "@/components/MenubarSimpleDemo"
 import { NavigationMenuDemo } from "@/components/NavigationMenuDemo"
 import { NavigationMenuSimpleDemo } from "@/components/NavigationMenuSimpleDemo"
+import { PopoverDemo, PopoverDemo2 } from "@/components/PopoverDemo"
 
 export default function IndexPage() {
   return (
@@ -206,20 +207,27 @@ export default function IndexPage() {
       <Box
         title="Menubar"
         desc="A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands."
+        contentClassName="flex gap-4"
       >
-        <div className="flex gap-4">
           <MenubarDemo />
           <MenubarSimpleDemo />
-        </div>
       </Box>
 
       <Box
         title="Navigation Menu"
         desc="A collection of links for navigating websites."
-        className="flex gap-4"
+        contentClassName="flex gap-4"
       >
         <NavigationMenuDemo />
         <NavigationMenuSimpleDemo />
+      </Box>
+      <Box
+        title="Popover"
+        desc="Displays rich content in a portal, triggered by a button."
+        contentClassName="flex gap-4"
+      >
+        <PopoverDemo />
+        <PopoverDemo2 />
       </Box>
     </section>
   )
