@@ -48,6 +48,7 @@ import { SheetChangeSizeDemo, SheetDemo } from "@/components/SheetDemo"
 import { SheetExamples } from "@/components/SheetExamples"
 import { SkeletonDemo, SkeletonDemo2 } from "@/components/SkeletonDemo"
 import { SliderDemo } from "@/components/SliderDemo"
+import { SwitchDemo, SwitchDemo2 } from "@/components/SwitchDemo"
 
 export default function IndexPage() {
   return (
@@ -309,6 +310,13 @@ export default function IndexPage() {
         desc="An input where the user selects a value from within a given range."
       >
         <SliderDemo/>
+      </Box>
+
+      <Box title="Switch" desc="A control that allows the user to toggle between checked and not checked."
+        contentClassName="flex space-x-4"
+      >
+        <SwitchDemo/>
+        <SwitchDemo2/>
       </Box>
     </section>
   )
