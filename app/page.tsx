@@ -43,6 +43,8 @@ import { RadioGroupDemo } from "@/components/RadioGroupDemo"
 import { ScrollAreaDemo, ScrollAreaDemo2 } from "@/components/ScrollAreaDemo"
 import { SelectDemo, SelectDemo2 } from "@/components/SelectDemo"
 import { SeparatorDemo, SeparatorDemo2 } from "@/components/SeparatorDemo"
+import { SheetChangeSizeDemo, SheetDemo } from "@/components/SheetDemo"
+import { SheetExamples } from "@/components/SheetExamples"
 
 export default function IndexPage() {
   return (
@@ -274,6 +276,17 @@ export default function IndexPage() {
           <SeparatorDemo />
           <SeparatorDemo2 />
         </div>
+      </Box>
+
+      <Box
+        title="Sheet"
+        desc="Extends the Dialog component to display content that complements the main content of the screen."
+        contentClassName="flex flex-col gap-4"
+      >
+        <SheetDemo />
+        <h3 className="scroll-m-20 text-xl font-semibold tracking-tighter">Change Size</h3>
+        <SheetChangeSizeDemo/>
+        <SheetExamples/>
       </Box>
     </section>
   )
