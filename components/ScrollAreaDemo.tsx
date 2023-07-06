@@ -6,7 +6,7 @@ import React from "react"
 
 export function ScrollAreaDemo(){
   return (
-    <ScrollArea className="h-[200px] w-[450px] rounded-md border p-4">
+    <ScrollArea className="h-[200px] w-6/12 rounded-md border p-4">
   Jokester began sneaking into the castle in the middle of the night and leaving
   jokes all over the place: under the king's pillow, in his soup, even in the
   royal toilet. The king was furious, but he couldn't seem to stop Jokester. And

@@ -49,6 +49,7 @@ import { SheetExamples } from "@/components/SheetExamples"
 import { SkeletonDemo, SkeletonDemo2 } from "@/components/SkeletonDemo"
 import { SliderDemo } from "@/components/SliderDemo"
 import { SwitchDemo, SwitchDemo2 } from "@/components/SwitchDemo"
+import { TableDemo, TableDemo2 } from "@/components/TableDemo"
 
 export default function IndexPage() {
   return (
@@ -298,10 +299,11 @@ export default function IndexPage() {
       <Box
         title="Skeleton"
         desc="Use to show a placeholder while content is loading."
-        contentClassName="flex gap-4"
+        contentClassName="flex flex-col gap-4"
       >
         <SkeletonDemo />
-        <Separator className="h-30" orientation="vertical" />
+        {/* <Separator className="h-30" orientation="vertical" /> */}
+        <Separator/>
         <SkeletonDemo2 />
       </Box>
 
@@ -317,6 +319,11 @@ export default function IndexPage() {
       >
         <SwitchDemo/>
         <SwitchDemo2/>
+      </Box>
+
+      <Box title="Table" desc="A responsive table component.">
+          <TableDemo/>
+          <TableDemo2/>
       </Box>
     </section>
   )
