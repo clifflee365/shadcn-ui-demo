@@ -41,6 +41,7 @@ import { PopoverDemo, PopoverDemo2 } from "@/components/PopoverDemo"
 import { ProgressDemo, ProgressDemoAnimate } from "@/components/ProgressDemo"
 import { RadioGroupDemo } from "@/components/RadioGroupDemo"
 import { ScrollAreaDemo, ScrollAreaDemo2 } from "@/components/ScrollAreaDemo"
+import { SelectDemo, SelectDemo2 } from "@/components/SelectDemo"
 
 export default function IndexPage() {
   return (
@@ -254,6 +255,14 @@ export default function IndexPage() {
       >
         <ScrollAreaDemo/>
         <ScrollAreaDemo2/>
+      </Box>
+
+      <Box
+        title="Select"
+        desc="Displays a list of options for the user to pick from—triggered by a button."
+      >
+        <SelectDemo/>
+        <SelectDemo2/>
       </Box>
     </section>
   )
