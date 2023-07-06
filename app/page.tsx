@@ -63,7 +63,15 @@ import {
   ToastSimple,
   ToastWithAction,
 } from "@/components/ToastDemo"
-import { ToggleDemo, ToggleDisabled, ToggleLg, ToggleSm, ToggleOutline, ToggleWithText } from "@/components/ToggleDemo"
+import {
+  ToggleDemo,
+  ToggleDisabled,
+  ToggleLg,
+  ToggleOutline,
+  ToggleSm,
+  ToggleWithText,
+} from "@/components/ToggleDemo"
+import { TooltipDemo } from "@/components/TooltipDemo"
 
 export default function IndexPage() {
   return (
@@ -380,13 +388,25 @@ export default function IndexPage() {
         </div>
       </Box>
 
-      <Box title="Toggle" desc="A two-state button that can be either on or off." contentClassName="flex gap-2">
-        <ToggleDemo/>
-        <ToggleOutline/>
-        <ToggleWithText/>
-        <ToggleSm/>
-        <ToggleLg/>
-        <ToggleDisabled/>
+      <Box
+        title="Toggle"
+        desc="A two-state button that can be either on or off."
+        contentClassName="flex gap-2"
+      >
+        <ToggleDemo />
+        <ToggleOutline />
+        <ToggleWithText />
+        <ToggleSm />
+        <ToggleLg />
+        <ToggleDisabled />
+      </Box>
+
+      <Box
+        title="Tooltip"
+        desc="A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.
+      Radix UI"
+      >
+        <TooltipDemo />
       </Box>
     </section>
   )
