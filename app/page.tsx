@@ -45,6 +45,8 @@ import { SelectDemo, SelectDemo2 } from "@/components/SelectDemo"
 import { SeparatorDemo, SeparatorDemo2 } from "@/components/SeparatorDemo"
 import { SheetChangeSizeDemo, SheetDemo } from "@/components/SheetDemo"
 import { SheetExamples } from "@/components/SheetExamples"
+import { SkeletonDemo, SkeletonDemo2 } from "@/components/SkeletonDemo"
+import { Separator } from "@/components/ui/separator"
 
 export default function IndexPage() {
   return (
@@ -284,9 +286,21 @@ export default function IndexPage() {
         contentClassName="flex flex-col gap-4"
       >
         <SheetDemo />
-        <h3 className="scroll-m-20 text-xl font-semibold tracking-tighter">Change Size</h3>
-        <SheetChangeSizeDemo/>
-        <SheetExamples/>
+        <h3 className="scroll-m-20 text-xl font-semibold tracking-tighter">
+          Change Size
+        </h3>
+        <SheetChangeSizeDemo />
+        <SheetExamples />
+      </Box>
+
+      <Box
+        title="Skeleton"
+        desc="Use to show a placeholder while content is loading."
+        contentClassName="flex gap-4"
+      >
+        <SkeletonDemo />
+        <Separator className="h-30" orientation="vertical" />
+        <SkeletonDemo2 />
       </Box>
     </section>
   )
