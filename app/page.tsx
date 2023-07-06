@@ -50,6 +50,7 @@ import { SkeletonDemo, SkeletonDemo2 } from "@/components/SkeletonDemo"
 import { SliderDemo } from "@/components/SliderDemo"
 import { SwitchDemo, SwitchDemo2 } from "@/components/SwitchDemo"
 import { TableDemo, TableDemo2 } from "@/components/TableDemo"
+import { TabsDemo, TabsDemo2 } from "@/components/TabsDemo"
 
 export default function IndexPage() {
   return (
@@ -303,7 +304,7 @@ export default function IndexPage() {
       >
         <SkeletonDemo />
         {/* <Separator className="h-30" orientation="vertical" /> */}
-        <Separator/>
+        <Separator />
         <SkeletonDemo2 />
       </Box>
 
@@ -311,19 +312,29 @@ export default function IndexPage() {
         title="Slider"
         desc="An input where the user selects a value from within a given range."
       >
-        <SliderDemo/>
+        <SliderDemo />
       </Box>
 
-      <Box title="Switch" desc="A control that allows the user to toggle between checked and not checked."
+      <Box
+        title="Switch"
+        desc="A control that allows the user to toggle between checked and not checked."
         contentClassName="flex space-x-4"
       >
-        <SwitchDemo/>
-        <SwitchDemo2/>
+        <SwitchDemo />
+        <SwitchDemo2 />
       </Box>
 
       <Box title="Table" desc="A responsive table component.">
-          <TableDemo/>
-          <TableDemo2/>
+        <TableDemo />
+        <TableDemo2 />
+      </Box>
+
+      <Box
+        title="Tabs"
+        desc="A set of layered sections of content—known as tab panels—that are displayed one at a time.一组分层的内容部分，被称为选项卡面板，一次只显示一个。"
+      >
+        <TabsDemo />
+        <TabsDemo2/>
       </Box>
     </section>
   )
