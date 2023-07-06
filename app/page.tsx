@@ -1,7 +1,7 @@
 import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
-import { buttonVariants } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { AccordionDemo } from "@/components/AccordionDemo"
 import { AlertDemo } from "@/components/AlertDemo"
@@ -63,6 +63,7 @@ import {
   ToastSimple,
   ToastWithAction,
 } from "@/components/ToastDemo"
+import { ToggleDemo, ToggleDisabled, ToggleLg, ToggleSm, ToggleOutline, ToggleWithText } from "@/components/ToggleDemo"
 
 export default function IndexPage() {
   return (
@@ -363,6 +364,7 @@ export default function IndexPage() {
       <Box
         title="Toast"
         desc="A succinct message that is displayed temporarily."
+        contentClassName="space-y-2"
       >
         <div className="flex flex-wrap gap-2">
           <ToastSimple />
@@ -370,9 +372,21 @@ export default function IndexPage() {
           <ToastWithAction />
           <ToastDestructive />
         </div>
-        <p>
-          支持 position 的 PR 还未 合并: https://github.com/shadcn/ui/pull/552
-        </p>
+        <div>
+          支持 position 的 PR 还未 合并:{" "}
+          <Link href="https://github.com/shadcn/ui/pull/552">
+            feat(toast): support position setting #552
+          </Link>
+        </div>
+      </Box>
+
+      <Box title="Toggle" desc="A two-state button that can be either on or off." contentClassName="flex gap-2">
+        <ToggleDemo/>
+        <ToggleOutline/>
+        <ToggleWithText/>
+        <ToggleSm/>
+        <ToggleLg/>
+        <ToggleDisabled/>
       </Box>
     </section>
   )
