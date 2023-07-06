@@ -51,6 +51,12 @@ import { SliderDemo } from "@/components/SliderDemo"
 import { SwitchDemo, SwitchDemo2 } from "@/components/SwitchDemo"
 import { TableDemo, TableDemo2 } from "@/components/TableDemo"
 import { TabsDemo, TabsDemo2 } from "@/components/TabsDemo"
+import {
+  TextareaDemo,
+  TextareaWithButton,
+  TextareaWithLabel,
+  TextareaWithText,
+} from "@/components/TextareaDemo"
 
 export default function IndexPage() {
   return (
@@ -334,7 +340,18 @@ export default function IndexPage() {
         desc="A set of layered sections of content—known as tab panels—that are displayed one at a time.一组分层的内容部分，被称为选项卡面板，一次只显示一个。"
       >
         <TabsDemo />
-        <TabsDemo2/>
+        <TabsDemo2 />
+      </Box>
+
+      <Box
+        title="Textarea"
+        desc="Displays a form textarea or a component that looks like a textarea."
+        contentClassName="space-y-4"
+      >
+        <TextareaDemo />
+        <TextareaWithLabel />
+        <TextareaWithText />
+        <TextareaWithButton />
       </Box>
     </section>
   )
