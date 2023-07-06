@@ -229,6 +229,8 @@ export default function IndexPage() {
         <PopoverDemo />
         <PopoverDemo2 />
       </Box>
+
+
     </section>
   )
 }
