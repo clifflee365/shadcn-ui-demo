@@ -42,6 +42,7 @@ import { ProgressDemo, ProgressDemoAnimate } from "@/components/ProgressDemo"
 import { RadioGroupDemo } from "@/components/RadioGroupDemo"
 import { ScrollAreaDemo, ScrollAreaDemo2 } from "@/components/ScrollAreaDemo"
 import { SelectDemo, SelectDemo2 } from "@/components/SelectDemo"
+import { SeparatorDemo, SeparatorDemo2 } from "@/components/SeparatorDemo"
 
 export default function IndexPage() {
   return (
@@ -240,29 +241,39 @@ export default function IndexPage() {
         contentClassName="flex flex-col gap-5"
       >
         <ProgressDemo />
-        <ProgressDemoAnimate/>
+        <ProgressDemoAnimate />
       </Box>
 
-      <Box title="Radio Group" desc="A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time."
-       contentClassName="flex flex-col"
+      <Box
+        title="Radio Group"
+        desc="A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time."
+        contentClassName="flex flex-col"
       >
-
-        <RadioGroupDemo/>
+        <RadioGroupDemo />
       </Box>
 
-      <Box title="ScrollArea" desc="Augments native scroll functionality for custom, cross-browser styling."
-      contentClassName="flex gap-4"
+      <Box
+        title="ScrollArea"
+        desc="Augments native scroll functionality for custom, cross-browser styling."
+        contentClassName="flex gap-4"
       >
-        <ScrollAreaDemo/>
-        <ScrollAreaDemo2/>
+        <ScrollAreaDemo />
+        <ScrollAreaDemo2 />
       </Box>
 
       <Box
         title="Select"
         desc="Displays a list of options for the user to pick from—triggered by a button."
       >
-        <SelectDemo/>
-        <SelectDemo2/>
+        <SelectDemo />
+        <SelectDemo2 />
+      </Box>
+
+      <Box title="Separator" desc="Visually or semantically separates content.">
+        <div className="flex flex-col gap-4">
+          <SeparatorDemo />
+          <SeparatorDemo2 />
+        </div>
       </Box>
     </section>
   )
