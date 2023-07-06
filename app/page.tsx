@@ -40,6 +40,7 @@ import { NavigationMenuSimpleDemo } from "@/components/NavigationMenuSimpleDemo"
 import { PopoverDemo, PopoverDemo2 } from "@/components/PopoverDemo"
 import { ProgressDemo, ProgressDemoAnimate } from "@/components/ProgressDemo"
 import { RadioGroupDemo } from "@/components/RadioGroupDemo"
+import { ScrollAreaDemo, ScrollAreaDemo2 } from "@/components/ScrollAreaDemo"
 
 export default function IndexPage() {
   return (
@@ -246,6 +247,13 @@ export default function IndexPage() {
       >
 
         <RadioGroupDemo/>
+      </Box>
+
+      <Box title="ScrollArea" desc="Augments native scroll functionality for custom, cross-browser styling."
+      contentClassName="flex gap-4"
+      >
+        <ScrollAreaDemo/>
+        <ScrollAreaDemo2/>
       </Box>
     </section>
   )
