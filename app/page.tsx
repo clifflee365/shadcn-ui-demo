@@ -57,6 +57,12 @@ import {
   TextareaWithLabel,
   TextareaWithText,
 } from "@/components/TextareaDemo"
+import {
+  ToastDemo,
+  ToastDestructive,
+  ToastSimple,
+  ToastWithAction,
+} from "@/components/ToastDemo"
 
 export default function IndexPage() {
   return (
@@ -352,6 +358,21 @@ export default function IndexPage() {
         <TextareaWithLabel />
         <TextareaWithText />
         <TextareaWithButton />
+      </Box>
+
+      <Box
+        title="Toast"
+        desc="A succinct message that is displayed temporarily."
+      >
+        <div className="flex flex-wrap gap-2">
+          <ToastSimple />
+          <ToastDemo />
+          <ToastWithAction />
+          <ToastDestructive />
+        </div>
+        <p>
+          支持 position 的 PR 还未 合并: https://github.com/shadcn/ui/pull/552
+        </p>
       </Box>
     </section>
   )
