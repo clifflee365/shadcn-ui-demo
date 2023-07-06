@@ -13,7 +13,8 @@ import { User } from "lucide-react"
 export function DropdownMenuSimpleDemo() {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger>
+      <DropdownMenuTrigger asChild>
+      {/* Simple Dropdown Open */}
         <Button variant="outline">Simple Dropdown Open</Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
