@@ -35,12 +35,12 @@ export function ScrollAreaDemo2() {
       <div className="p-4">
         <h4 className="mb-4 text-sm font-medium leading-none">Tags</h4>
         {tags.map((tag) => (
-          <React.Fragment>
-            <div className="text-sm" key={tag}>
+          <div key={tag}>
+            <div data-tag={tag} className="text-sm">
               {tag}
             </div>
-            <Separator className="my-2" />
-          </React.Fragment>
+            <Separator className="my-2"/>
+          </div>
         ))}
       </div>
     </ScrollArea>
