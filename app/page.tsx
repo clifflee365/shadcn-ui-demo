@@ -38,6 +38,7 @@ import { MenubarSimpleDemo } from "@/components/MenubarSimpleDemo"
 import { NavigationMenuDemo } from "@/components/NavigationMenuDemo"
 import { NavigationMenuSimpleDemo } from "@/components/NavigationMenuSimpleDemo"
 import { PopoverDemo, PopoverDemo2 } from "@/components/PopoverDemo"
+import { ProgressDemo, ProgressDemoAnimate } from "@/components/ProgressDemo"
 
 export default function IndexPage() {
   return (
@@ -209,8 +210,8 @@ export default function IndexPage() {
         desc="A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands."
         contentClassName="flex gap-4"
       >
-          <MenubarDemo />
-          <MenubarSimpleDemo />
+        <MenubarDemo />
+        <MenubarSimpleDemo />
       </Box>
 
       <Box
@@ -230,7 +231,14 @@ export default function IndexPage() {
         <PopoverDemo2 />
       </Box>
 
-
+      <Box
+        title="Progress"
+        desc="Displays an indicator showing the completion progress of a task, typically displayed as a progress bar."
+        contentClassName="flex flex-col gap-5"
+      >
+        <ProgressDemo />
+        <ProgressDemoAnimate/>
+      </Box>
     </section>
   )
 }
