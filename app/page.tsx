@@ -39,6 +39,7 @@ import { NavigationMenuDemo } from "@/components/NavigationMenuDemo"
 import { NavigationMenuSimpleDemo } from "@/components/NavigationMenuSimpleDemo"
 import { PopoverDemo, PopoverDemo2 } from "@/components/PopoverDemo"
 import { ProgressDemo, ProgressDemoAnimate } from "@/components/ProgressDemo"
+import { RadioGroupDemo } from "@/components/RadioGroupDemo"
 
 export default function IndexPage() {
   return (
@@ -238,6 +239,13 @@ export default function IndexPage() {
       >
         <ProgressDemo />
         <ProgressDemoAnimate/>
+      </Box>
+
+      <Box title="Radio Group" desc="A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time."
+       contentClassName="flex flex-col"
+      >
+
+        <RadioGroupDemo/>
       </Box>
     </section>
   )
