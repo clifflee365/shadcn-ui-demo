@@ -2,6 +2,7 @@ import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
+import { Separator } from "@/components/ui/separator"
 import { AccordionDemo } from "@/components/AccordionDemo"
 import { AlertDemo } from "@/components/AlertDemo"
 import { AlertDialogDemo } from "@/components/AlertDialogDemo"
@@ -46,7 +47,7 @@ import { SeparatorDemo, SeparatorDemo2 } from "@/components/SeparatorDemo"
 import { SheetChangeSizeDemo, SheetDemo } from "@/components/SheetDemo"
 import { SheetExamples } from "@/components/SheetExamples"
 import { SkeletonDemo, SkeletonDemo2 } from "@/components/SkeletonDemo"
-import { Separator } from "@/components/ui/separator"
+import { SliderDemo } from "@/components/SliderDemo"
 
 export default function IndexPage() {
   return (
@@ -301,6 +302,13 @@ export default function IndexPage() {
         <SkeletonDemo />
         <Separator className="h-30" orientation="vertical" />
         <SkeletonDemo2 />
+      </Box>
+
+      <Box
+        title="Slider"
+        desc="An input where the user selects a value from within a given range."
+      >
+        <SliderDemo/>
       </Box>
     </section>
   )
