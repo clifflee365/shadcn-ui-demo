@@ -15,7 +15,7 @@ import { CalendarDatePicker } from "@/components/CalendarDatePickerDemo"
 import { CalendarDatePickerWithPresets } from "@/components/CalendarDatePickerWithPresetsDemo"
 import { CalendarDateRangePicker } from "@/components/CalendarDateRangePickerDemo"
 import { CalendarDemo } from "@/components/CalendarDemo"
-import { CardDemo } from "@/components/CardDemo"
+import { CardExample } from "@/components/CardExample"
 import { CardWithForm } from "@/components/CardWithFormDemo"
 import { CheckboxDemo } from "@/components/CheckboxDmeo"
 import { CollapsibleDemo } from "@/components/CollapsibleDemo"
@@ -73,6 +73,7 @@ import {
 } from "@/components/ToggleDemo"
 import { TooltipDemo } from "@/components/TooltipDemo"
 import { CalendarForm } from "@/components/CalendarForm"
+import { CardSimple } from "@/components/CardSimple"
 
 export default function IndexPage() {
   return (
@@ -160,22 +161,23 @@ export default function IndexPage() {
         <CalendarForm/>
       </Box>
 
-      {/* <Box title="Date Picker" desc="A date picker component with range and presets.">
+      <Box title="Date Picker" desc="A date picker component with range and presets.">
       <section className="flex flex-col gap-4">
           <CalendarDatePicker />
           <CalendarDateRangePicker />
           <CalendarDatePickerWithPresets />
         </section>
-      </Box> */}
+      </Box>
 
-{/*
       <Box title="Card" desc="卡片组件">
-        <div className="flex gap-4">
-          <CardDemo />
+        <div className="flex flex-col gap-4">
+          <CardSimple/>
+          <CardExample />
           <CardWithForm />
         </div>
       </Box>
 
+{/*
       <Box
         title="Checkbox"
         desc="A control that allows the user to toggle between checked and not checked."
