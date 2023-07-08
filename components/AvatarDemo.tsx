@@ -11,3 +11,12 @@ export function AvatarDemo() {
     </Avatar>
   )
 }
+
+
+export function AvatarDemoOnlyFallback() {
+  return (
+    <Avatar>
+      <AvatarFallback>LF</AvatarFallback>
+    </Avatar>
+  )
+}

@@ -1,5 +1,6 @@
+'use client '
 import { Button, buttonVariants } from "@/components/ui/button"
-import { Mail,Loader2 } from "lucide-react"
+import { Mail,Loader2, ChevronRight } from "lucide-react"
 
 import Link from "next/link"
 
@@ -11,6 +12,9 @@ export function ButtonDemo() {
     <Button variant="outline">Outline</Button>
     <Button variant="ghost">Ghost</Button>
     <Button variant="link">Link</Button>
+    <Button variant="outline" size="icon">
+      <ChevronRight className="h-4 w-4" />
+    </Button>
     <Button>
       <Mail className="mr-2 h-4 w-4" /> Login with Email
     </Button>

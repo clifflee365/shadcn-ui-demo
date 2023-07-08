@@ -7,7 +7,7 @@ import { AccordionDemo } from "@/components/AccordionDemo"
 import { AlertDemo } from "@/components/AlertDemo"
 import { AlertDialogDemo } from "@/components/AlertDialogDemo"
 import { AspectRatioDemo } from "@/components/AspectRatioDemo"
-import { AvatarDemo } from "@/components/AvatarDemo"
+import { AvatarDemo, AvatarDemoOnlyFallback } from "@/components/AvatarDemo"
 import { BadgeDemo } from "@/components/BadgeDemo"
 import Box from "@/components/Box"
 import { ButtonDemo } from "@/components/ButtonDemo"
@@ -72,10 +72,11 @@ import {
   ToggleWithText,
 } from "@/components/ToggleDemo"
 import { TooltipDemo } from "@/components/TooltipDemo"
+import { CalendarForm } from "@/components/CalendarForm"
 
 export default function IndexPage() {
   return (
-    <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
+    <section className="container grid items-center gap-6 pb-8 pt-6 md:p-8" >
       <div className="flex max-w-[980px] flex-col items-start gap-2">
         <h1 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl">
           Beautifully designed components <br className="hidden sm:inline" />
@@ -86,7 +87,7 @@ export default function IndexPage() {
           into your apps. Free. Open Source. And Next.js 13 Ready.
         </p>
       </div>
-      <div className="flex gap-4">
+      <div className="flex flex-wrap gap-4">
         <Link
           href={siteConfig.links.docs}
           target="_blank"
@@ -105,53 +106,69 @@ export default function IndexPage() {
         </Link>
       </div>
 
-      <Box title="Accordion" desc="折叠组件">
+      <Box title="Accordion" desc="A vertically stacked set of interactive headings that each reveal a section of content. 一个垂直堆叠的互动标题集合，每个标题都会展示一段内容。">
         <AccordionDemo />
       </Box>
+
       <Box title="Alert" desc="Displays a callout for user attention.">
         <AlertDemo />
       </Box>
+
       <Box
         title="AlertDialog"
         desc="A modal dialog that interrupts the user with important content and expects a response."
       >
         <AlertDialogDemo />
       </Box>
+
       <Box title="Aspect Ratio" desc="Displays content within a desired ratio.">
         <AspectRatioDemo />
       </Box>
+
       <Box
         title="Avatar"
         desc="An image element with a fallback for representing the user."
-      >
+        contentClassName="flex gap-4"
+        >
         <AvatarDemo />
+        <AvatarDemoOnlyFallback/>
       </Box>
+
+
       <Box
         title="Badge"
         desc="Displays a badge or a component that looks like a badge."
-      >
+        >
         <BadgeDemo />
       </Box>
 
       <Box
         title="Button"
         desc="Displays a button or a component that looks like a button."
-      >
+        >
         <ButtonDemo />
       </Box>
 
+
       <Box
         title="Calendar"
-        desc="A date field component that allows users to enter and edit date."
+        desc="A date field composnent that allows users to enter and edit date."
+        contentClassName="flex flex-col gap-4"
       >
         <CalendarDemo />
-        <section className="flex flex-col gap-4">
+        <h4>Calendar 表单示例:</h4>
+        <CalendarForm/>
+      </Box>
+
+      {/* <Box title="Date Picker" desc="A date picker component with range and presets.">
+      <section className="flex flex-col gap-4">
           <CalendarDatePicker />
           <CalendarDateRangePicker />
           <CalendarDatePickerWithPresets />
         </section>
-      </Box>
+      </Box> */}
 
+{/*
       <Box title="Card" desc="卡片组件">
         <div className="flex gap-4">
           <CardDemo />
@@ -324,7 +341,6 @@ export default function IndexPage() {
         contentClassName="flex flex-col gap-4"
       >
         <SkeletonDemo />
-        {/* <Separator className="h-30" orientation="vertical" /> */}
         <Separator />
         <SkeletonDemo2 />
       </Box>
@@ -407,7 +423,7 @@ export default function IndexPage() {
       Radix UI"
       >
         <TooltipDemo />
-      </Box>
+      </Box> */}
     </section>
   )
 }
