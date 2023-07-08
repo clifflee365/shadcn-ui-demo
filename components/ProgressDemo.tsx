@@ -23,11 +23,14 @@ export function ProgressDemoAnimate() {
   // }
 
   return (
-    <div className="flex items-center gap-4">
-      <Progress value={progress} className="w-[60%]" />
+    <div className="flex flex-col items-center gap-4">
+      <Progress value={progress} className="w-full" />
+      <section className="flex gap-2">
+
       <Button onClick={() => setProgress(10)}>To 10%</Button>
-      <Button onClick={() => setProgress(66)}>To 66%</Button>
-      <Button onClick={() => setProgress(100)}>To 100%</Button>
+      <Button variant="secondary" onClick={() => setProgress(66)}>To 66%</Button>
+      <Button variant="outline" onClick={() => setProgress(100)}>To 100%</Button>
+      </section>
     </div>
   )
 }

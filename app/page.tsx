@@ -91,6 +91,8 @@ import {
   ToggleWithText,
 } from "@/components/ToggleDemo"
 import { TooltipDemo } from "@/components/TooltipDemo"
+import { RadioGroupForm } from "@/components/RadioGroupForm"
+import { SelectForm } from "@/components/SelectForm"
 
 export default function IndexPage() {
   return (
@@ -340,7 +342,7 @@ export default function IndexPage() {
         <PopoverDemo />
         <PopoverDemo2 />
       </Box>
-{/*
+
       <Box
         title="Progress"
         desc="Displays an indicator showing the completion progress of a task, typically displayed as a progress bar."
@@ -353,15 +355,16 @@ export default function IndexPage() {
       <Box
         title="Radio Group"
         desc="A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time."
-        contentClassName="flex flex-col"
+        contentClassName="flex flex-col space-y-4"
       >
         <RadioGroupDemo />
+        <RadioGroupForm/>
       </Box>
 
       <Box
         title="ScrollArea"
         desc="Augments native scroll functionality for custom, cross-browser styling."
-        contentClassName="flex gap-4"
+        contentClassName="flex flex-col gap-4"
       >
         <ScrollAreaDemo />
         <ScrollAreaDemo2 />
@@ -370,9 +373,12 @@ export default function IndexPage() {
       <Box
         title="Select"
         desc="Displays a list of options for the user to pick from—triggered by a button."
+        contentClassName="flex flex-col space-y-4"
       >
         <SelectDemo />
         <SelectDemo2 />
+        <Separator/>
+        <SelectForm/>
       </Box>
 
       <Box title="Separator" desc="Visually or semantically separates content.">
@@ -394,7 +400,7 @@ export default function IndexPage() {
         <SheetChangeSizeDemo />
         <SheetExamples />
       </Box>
-
+{/*
       <Box
         title="Skeleton"
         desc="Use to show a placeholder while content is loading."

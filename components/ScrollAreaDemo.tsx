@@ -6,7 +6,7 @@ import React from "react"
 
 export function ScrollAreaDemo(){
   return (
-    <ScrollArea className="h-[200px] w-6/12 rounded-md border p-4">
+    <ScrollArea className="h-[200px] w-full rounded-md border p-4">
   Jokester began sneaking into the castle in the middle of the night and leaving
   jokes all over the place: under the king's pillow, in his soup, even in the
   royal toilet. The king was furious, but he couldn't seem to stop Jokester. And
@@ -31,7 +31,7 @@ const tags = Array.from({ length: 30 }).map(
 
 export function ScrollAreaDemo2() {
   return (
-    <ScrollArea className="h-72 w-48 rounded-md border">
+    <ScrollArea className="h-48 w-full rounded-md border">
       <div className="p-4">
         <h4 className="mb-4 text-sm font-medium leading-none">Tags</h4>
         {tags.map((tag) => (
