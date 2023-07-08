@@ -23,6 +23,12 @@ export function NavigationMenuSimpleDemo() {
             </div>
           </NavigationMenuContent>
         </NavigationMenuItem>
+        <NavigationMenuItem>
+        <NavigationMenuTrigger>Item2</NavigationMenuTrigger>
+        <NavigationMenuContent>
+
+        </NavigationMenuContent>
+        </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
   )

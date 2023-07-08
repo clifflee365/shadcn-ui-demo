@@ -311,24 +311,27 @@ export default function IndexPage() {
         <LabelDemo />
         <LabelDemoAssociateInput/>
       </Box>
-{/*
+
       <Box
         title="Menubar"
         desc="A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands."
-        contentClassName="flex gap-4"
+        contentClassName="flex flex-col gap-4"
       >
-        <MenubarDemo />
         <MenubarSimpleDemo />
+        <MenubarDemo />
       </Box>
 
       <Box
         title="Navigation Menu"
         desc="A collection of links for navigating websites."
-        contentClassName="flex gap-4"
+        contentClassName="flex flex-col gap-4"
+
       >
-        <NavigationMenuDemo />
         <NavigationMenuSimpleDemo />
+        <NavigationMenuDemo />
       </Box>
+
+
       <Box
         title="Popover"
         desc="Displays rich content in a portal, triggered by a button."
@@ -337,7 +340,7 @@ export default function IndexPage() {
         <PopoverDemo />
         <PopoverDemo2 />
       </Box>
-
+{/*
       <Box
         title="Progress"
         desc="Displays an indicator showing the completion progress of a task, typically displayed as a progress bar."
