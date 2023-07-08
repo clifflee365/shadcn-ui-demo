@@ -26,6 +26,12 @@ const Playground = () => {
           />
         </div>
       </div>
+
+      <h3>为何简单的 input 组件也要用 grid 布局?</h3>
+      <div className="grid w-full max-w-sm items-center gap-1.5">
+      <Label htmlFor="picture">Picture</Label>
+      <Input id="picture" type="file" />
+    </div>
     </Box>
   )
 }

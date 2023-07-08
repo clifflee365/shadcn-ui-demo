@@ -11,9 +11,6 @@ import { AvatarDemo, AvatarDemoOnlyFallback } from "@/components/AvatarDemo"
 import { BadgeDemo } from "@/components/BadgeDemo"
 import Box from "@/components/Box"
 import { ButtonDemo } from "@/components/ButtonDemo"
-import { DatePickerDemo } from "@/components/DatePickerDemo"
-import { DatePickerWithPresets } from "@/components/DatePickerWithPresets"
-import { DatePickerWithRange } from "@/components/DatePickerWithRange"
 import { CalendarDemo } from "@/components/CalendarDemo"
 import { CalendarForm } from "@/components/CalendarForm"
 import { CardExample } from "@/components/CardExample"
@@ -39,14 +36,23 @@ import { CommandDemo, CommandSimpleDemo } from "@/components/CommandDemo"
 import { CommandDialogDemo } from "@/components/CommandDialogDemo"
 import { CommandMenu } from "@/components/CommandMenu"
 import { ContextMenuDemo } from "@/components/ContextMenuDemo"
-import { DialogDemo, DialogSimple, DialogWithContextMenu } from "@/components/DialogDemo"
+import { ContextMenuSimple } from "@/components/ContextMenuSimple"
+import { DatePickerDemo } from "@/components/DatePickerDemo"
+import { DatePickerForm } from "@/components/DatePickerForm"
+import { DatePickerWithPresets } from "@/components/DatePickerWithPresets"
+import { DatePickerWithRange } from "@/components/DatePickerWithRange"
+import {
+  DialogDemo,
+  DialogSimple,
+  DialogWithContextMenu,
+} from "@/components/DialogDemo"
 import { DropdownMenuCheckboxes } from "@/components/DropdownMenuCheckboxDemo"
 import { DropdownMenuDemo } from "@/components/DropdownMenuDemo"
 import { DropdownMenuRadioGroupDemo } from "@/components/DropdownMenuRadioGroupDemo"
 import { DropdownMenuSimpleDemo } from "@/components/DropdownMenuSimpleDemo"
-import { HoverCardDemo } from "@/components/HoverCardDemo"
-import { InputDemo } from "@/components/InputDemo"
-import { LabelDemo } from "@/components/LabelDemo"
+import { HoverCardDemo, HoverCardSimple } from "@/components/HoverCardDemo"
+import { InputDemo, InputDisabled, InputFile, InputWithButton, InputWithLabel, InputWithLabelAndDesc } from "@/components/InputDemo"
+import { LabelDemo, LabelDemoAssociateInput } from "@/components/LabelDemo"
 import { MenubarDemo } from "@/components/MenubarDemo"
 import { MenubarSimpleDemo } from "@/components/MenubarSimpleDemo"
 import { NavigationMenuDemo } from "@/components/NavigationMenuDemo"
@@ -85,8 +91,6 @@ import {
   ToggleWithText,
 } from "@/components/ToggleDemo"
 import { TooltipDemo } from "@/components/TooltipDemo"
-import { ContextMenuSimple } from "@/components/ContextMenuSimple"
-import { DatePickerForm } from "@/components/DatePickerForm"
 
 export default function IndexPage() {
   return (
@@ -237,11 +241,11 @@ export default function IndexPage() {
         title="Context Menu"
         desc="Displays a menu to the user — such as a set of actions or functions — triggered by a button."
         contentClassName="space-y-4"
-        >
-          <ContextMenuSimple/>
-          <ContextMenuDemo />
+      >
+        <ContextMenuSimple />
+        <ContextMenuDemo />
       </Box>
-
+      {/* todo Data Table */}
       <Box
         title="Date Picker"
         desc="A date picker component with range and presets."
@@ -250,19 +254,18 @@ export default function IndexPage() {
           <DatePickerDemo />
           <DatePickerWithRange />
           <DatePickerWithPresets />
-          <DatePickerForm/>
+          <DatePickerForm />
         </section>
       </Box>
-
 
       <Box
         title="Dialog"
         desc="A window overlaid on either the primary window or another dialog window, rendering the content underneath inert."
         contentClassName="flex flex-col gap-4"
       >
-        <DialogSimple/>
+        <DialogSimple />
         <DialogDemo />
-        <DialogWithContextMenu/>
+        <DialogWithContextMenu />
       </Box>
 
       <Box
@@ -276,28 +279,39 @@ export default function IndexPage() {
           <DropdownMenuDemo />
         </div>
       </Box>
-{/*
+      {/* todo Form */}
       <Box
         title="Hover Card"
         desc="For sighted users to preview content available behind a link."
+        contentClassName="flex justify-around items-center gap-4"
       >
+        <HoverCardSimple/>
         <HoverCardDemo />
       </Box>
 
       <Box
         title="Input"
         desc="Displays a form input field or a component that looks like an input field."
-      >
+        contentClassName="flex flex-col gap-3"
+        >
         <InputDemo />
+        <InputFile/>
+        <InputDisabled/>
+        <InputWithLabel/>
+        <InputWithLabelAndDesc/>
+        <InputWithButton/>
       </Box>
+
 
       <Box
         title="Label"
         desc="Renders an accessible label associated with controls."
+        contentClassName="flex flex-col gap-3"
       >
         <LabelDemo />
+        <LabelDemoAssociateInput/>
       </Box>
-
+{/*
       <Box
         title="Menubar"
         desc="A visually persistent menu common in desktop applications that provides quick access to a consistent set of commands."
