@@ -11,9 +11,9 @@ import { AvatarDemo, AvatarDemoOnlyFallback } from "@/components/AvatarDemo"
 import { BadgeDemo } from "@/components/BadgeDemo"
 import Box from "@/components/Box"
 import { ButtonDemo } from "@/components/ButtonDemo"
-import { CalendarDatePicker } from "@/components/CalendarDatePickerDemo"
-import { CalendarDatePickerWithPresets } from "@/components/CalendarDatePickerWithPresetsDemo"
-import { CalendarDateRangePicker } from "@/components/CalendarDateRangePickerDemo"
+import { DatePickerDemo } from "@/components/DatePickerDemo"
+import { DatePickerWithPresets } from "@/components/DatePickerWithPresets"
+import { DatePickerWithRange } from "@/components/DatePickerWithRange"
 import { CalendarDemo } from "@/components/CalendarDemo"
 import { CalendarForm } from "@/components/CalendarForm"
 import { CardExample } from "@/components/CardExample"
@@ -39,7 +39,7 @@ import { CommandDemo, CommandSimpleDemo } from "@/components/CommandDemo"
 import { CommandDialogDemo } from "@/components/CommandDialogDemo"
 import { CommandMenu } from "@/components/CommandMenu"
 import { ContextMenuDemo } from "@/components/ContextMenuDemo"
-import { DialogDemo } from "@/components/DialogDemo"
+import { DialogDemo, DialogSimple, DialogWithContextMenu } from "@/components/DialogDemo"
 import { DropdownMenuCheckboxes } from "@/components/DropdownMenuCheckboxDemo"
 import { DropdownMenuDemo } from "@/components/DropdownMenuDemo"
 import { DropdownMenuRadioGroupDemo } from "@/components/DropdownMenuRadioGroupDemo"
@@ -86,6 +86,7 @@ import {
 } from "@/components/ToggleDemo"
 import { TooltipDemo } from "@/components/TooltipDemo"
 import { ContextMenuSimple } from "@/components/ContextMenuSimple"
+import { DatePickerForm } from "@/components/DatePickerForm"
 
 export default function IndexPage() {
   return (
@@ -174,17 +175,6 @@ export default function IndexPage() {
         <CalendarForm />
       </Box>
 
-      <Box
-        title="Date Picker"
-        desc="A date picker component with range and presets."
-      >
-        <section className="flex flex-col gap-4">
-          <CalendarDatePicker />
-          <CalendarDateRangePicker />
-          <CalendarDatePickerWithPresets />
-        </section>
-      </Box>
-
       <Box title="Card" desc="卡片组件">
         <div className="flex flex-col gap-4">
           <CardSimple />
@@ -252,26 +242,41 @@ export default function IndexPage() {
           <ContextMenuDemo />
       </Box>
 
-        {/*
+      <Box
+        title="Date Picker"
+        desc="A date picker component with range and presets."
+      >
+        <section className="flex flex-col gap-4">
+          <DatePickerDemo />
+          <DatePickerWithRange />
+          <DatePickerWithPresets />
+          <DatePickerForm/>
+        </section>
+      </Box>
+
+
       <Box
         title="Dialog"
         desc="A window overlaid on either the primary window or another dialog window, rendering the content underneath inert."
+        contentClassName="flex flex-col gap-4"
       >
+        <DialogSimple/>
         <DialogDemo />
+        <DialogWithContextMenu/>
       </Box>
 
       <Box
         title="Dropdown Menu"
         desc="Displays a menu to the user — such as a set of actions or functions — triggered by a button."
       >
-        <div className="flex gap-4">
-          <DropdownMenuDemo />
+        <div className="flex flex-wrap gap-4">
           <DropdownMenuSimpleDemo />
           <DropdownMenuCheckboxes />
           <DropdownMenuRadioGroupDemo />
+          <DropdownMenuDemo />
         </div>
       </Box>
-
+{/*
       <Box
         title="Hover Card"
         desc="For sighted users to preview content available behind a link."
