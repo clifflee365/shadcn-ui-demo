@@ -47,7 +47,7 @@ export function CollapsibleDemo() {
       <Collapsible
         open={isOpen}
         onOpenChange={setIsOpen}
-        className="w-[350px] space-y-2"
+        className="max-w-[350px] space-y-2"
       >
         <div className="flex items-center justify-between space-x-4 px-4">
           <h4 className="text-sm font-semibold">

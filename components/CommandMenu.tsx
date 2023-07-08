@@ -1,6 +1,8 @@
 "use client"
 
 import * as React from "react"
+import { Calendar, Smile } from "lucide-react"
+
 import {
   CommandDialog,
   CommandEmpty,
@@ -31,9 +33,18 @@ export function CommandMenu() {
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
         <CommandGroup heading="Suggestions">
-          <CommandItem>Calendar</CommandItem>
-          <CommandItem>Search Emoji</CommandItem>
-          <CommandItem>Calculator</CommandItem>
+          <CommandItem>
+            <Calendar className="mr-2 h-4 w-4" />
+            Calendar
+          </CommandItem>
+          <CommandItem>
+            <Smile className="mr-2 h-4 w-4" />
+            Search Emoji
+          </CommandItem>
+          <CommandItem>
+            Calculator
+            <CommandShortcut>⌘S</CommandShortcut>
+          </CommandItem>
         </CommandGroup>
       </CommandList>
     </CommandDialog>

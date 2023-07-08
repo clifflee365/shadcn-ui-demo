@@ -15,16 +15,29 @@ import { CalendarDatePicker } from "@/components/CalendarDatePickerDemo"
 import { CalendarDatePickerWithPresets } from "@/components/CalendarDatePickerWithPresetsDemo"
 import { CalendarDateRangePicker } from "@/components/CalendarDateRangePickerDemo"
 import { CalendarDemo } from "@/components/CalendarDemo"
+import { CalendarForm } from "@/components/CalendarForm"
 import { CardExample } from "@/components/CardExample"
+import { CardSimple } from "@/components/CardSimple"
 import { CardWithForm } from "@/components/CardWithFormDemo"
-import { CheckboxDemo, CheckboxDisabled, CheckboxWithText } from "@/components/CheckboxDmeo"
-import { CollapsibleCustom, CollapsibleDemo, CollapsibleSimple } from "@/components/CollapsibleDemo"
-import { CommandCombobox } from "@/components/CommandComboboxDemo"
-import { CommandDemo } from "@/components/CommandDemo"
+import {
+  CheckboxDemo,
+  CheckboxDisabled,
+  CheckboxWithText,
+} from "@/components/CheckboxDmeo"
+import { CheckboxReactHookFormMultiple } from "@/components/CheckboxReactHookFormMultiple"
+import { CheckboxReactHookFormSingle } from "@/components/CheckboxReactHookFormSingle"
+import {
+  CollapsibleCustom,
+  CollapsibleDemo,
+  CollapsibleSimple,
+} from "@/components/CollapsibleDemo"
+import { ComboboxDemo } from "@/components/ComboboxDemo"
+import { ComboboxDropdownMenu } from "@/components/ComboboxDropdownMenu"
+import { ComboboxForm } from "@/components/ComboboxForm"
+import { ComboboxPopover } from "@/components/ComboboxPopover"
+import { CommandDemo, CommandSimpleDemo } from "@/components/CommandDemo"
 import { CommandDialogDemo } from "@/components/CommandDialogDemo"
-import { CommandDropdownMenu } from "@/components/CommandDropdownMenuDemo"
 import { CommandMenu } from "@/components/CommandMenu"
-import { CommandPopover } from "@/components/CommandPopoverDemo"
 import { ContextMenuDemo } from "@/components/ContextMenuDemo"
 import { DialogDemo } from "@/components/DialogDemo"
 import { DropdownMenuCheckboxes } from "@/components/DropdownMenuCheckboxDemo"
@@ -72,14 +85,10 @@ import {
   ToggleWithText,
 } from "@/components/ToggleDemo"
 import { TooltipDemo } from "@/components/TooltipDemo"
-import { CalendarForm } from "@/components/CalendarForm"
-import { CardSimple } from "@/components/CardSimple"
-import { CheckboxReactHookFormSingle } from "@/components/CheckboxReactHookFormSingle"
-import { CheckboxReactHookFormMultiple } from "@/components/CheckboxReactHookFormMultiple"
 
 export default function IndexPage() {
   return (
-    <section className="container grid items-center gap-6 pb-8 pt-6 md:p-8" >
+    <section className="container grid items-center gap-6 pb-8 pt-6 md:p-8">
       <div className="flex max-w-[980px] flex-col items-start gap-2">
         <h1 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl">
           Beautifully designed components <br className="hidden sm:inline" />
@@ -109,7 +118,10 @@ export default function IndexPage() {
         </Link>
       </div>
 
-      <Box title="Accordion" desc="A vertically stacked set of interactive headings that each reveal a section of content. 一个垂直堆叠的互动标题集合，每个标题都会展示一段内容。">
+      <Box
+        title="Accordion"
+        desc="A vertically stacked set of interactive headings that each reveal a section of content. 一个垂直堆叠的互动标题集合，每个标题都会展示一段内容。"
+      >
         <AccordionDemo />
       </Box>
 
@@ -132,26 +144,24 @@ export default function IndexPage() {
         title="Avatar"
         desc="An image element with a fallback for representing the user."
         contentClassName="flex gap-4"
-        >
+      >
         <AvatarDemo />
-        <AvatarDemoOnlyFallback/>
+        <AvatarDemoOnlyFallback />
       </Box>
-
 
       <Box
         title="Badge"
         desc="Displays a badge or a component that looks like a badge."
-        >
+      >
         <BadgeDemo />
       </Box>
 
       <Box
         title="Button"
         desc="Displays a button or a component that looks like a button."
-        >
+      >
         <ButtonDemo />
       </Box>
-
 
       <Box
         title="Calendar"
@@ -160,11 +170,14 @@ export default function IndexPage() {
       >
         <CalendarDemo />
         <h4>Calendar 表单示例:</h4>
-        <CalendarForm/>
+        <CalendarForm />
       </Box>
 
-      <Box title="Date Picker" desc="A date picker component with range and presets.">
-      <section className="flex flex-col gap-4">
+      <Box
+        title="Date Picker"
+        desc="A date picker component with range and presets."
+      >
+        <section className="flex flex-col gap-4">
           <CalendarDatePicker />
           <CalendarDateRangePicker />
           <CalendarDatePickerWithPresets />
@@ -173,7 +186,7 @@ export default function IndexPage() {
 
       <Box title="Card" desc="卡片组件">
         <div className="flex flex-col gap-4">
-          <CardSimple/>
+          <CardSimple />
           <CardExample />
           <CardWithForm />
         </div>
@@ -183,14 +196,14 @@ export default function IndexPage() {
         title="Checkbox"
         desc="A control that allows the user to toggle between checked and not checked."
         contentClassName="flex flex-col gap-4"
-        >
+      >
         <CheckboxDemo />
-        <CheckboxWithText/>
-        <CheckboxDisabled/>
-        <Separator/>
-        <CheckboxReactHookFormSingle/>
-        <Separator/>
-        <CheckboxReactHookFormMultiple/>
+        <CheckboxWithText />
+        <CheckboxDisabled />
+        <Separator />
+        <CheckboxReactHookFormSingle />
+        <Separator />
+        <CheckboxReactHookFormMultiple />
       </Box>
 
       <Box
@@ -198,30 +211,38 @@ export default function IndexPage() {
         desc="An interactive component which expands/collapses a panel."
         className="min-h-[400px]"
         contentClassName="flex flex-col gap-4"
-        >
-          <CollapsibleSimple/>
-          <CollapsibleCustom/>
-          <CollapsibleDemo />
+      >
+        <CollapsibleSimple />
+        <CollapsibleCustom />
+        <CollapsibleDemo />
       </Box>
 
-        {/*
+      <Box
+        title="Combobox"
+        desc="Autocomplete input and command palette with a list of suggestions."
+        contentClassName="flex flex-col gap-4"
+      >
+        <ComboboxDemo />
+        <ComboboxPopover />
+        <ComboboxDropdownMenu />
+        <ComboboxForm />
+      </Box>
+
       <Box
         title="Command K"
         desc="Fast, composable, unstyled command menu for React."
       >
         <div className="flex flex-col gap-5">
-          <div className="flex min-h-[350px] w-[400px] items-start justify-center p-10">
-            <CommandDemo />
-          </div>
+          <CommandSimpleDemo />
+          <CommandDemo />
+          {/* <div className="flex min-h-[350px] max-w-[400px] items-start justify-center p-2">
+          </div> */}
           <CommandDialogDemo />
           <p>隐藏的快捷键:Cmd+K 唤起全局搜索菜单</p>
           <CommandMenu />
-          <CommandCombobox />
-          <CommandPopover />
-          <CommandDropdownMenu />
         </div>
       </Box>
-
+      {/*
       <Box
         title="Context Menu"
         desc="Displays a menu to the user — such as a set of actions or functions — triggered by a button."

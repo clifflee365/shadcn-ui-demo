@@ -18,6 +18,24 @@ import {
   CommandShortcut,
 } from "@/components/ui/command"
 
+export function CommandSimpleDemo() {
+  return (
+    <Command className="rounded-md border shadow-md">
+      <CommandInput placeholder="Type a command or search..." />
+      <CommandList>
+        <CommandEmpty>No results found.</CommandEmpty>
+        <CommandGroup heading="Suggestions">
+          <CommandItem>Calendar</CommandItem>
+        </CommandGroup>
+        <CommandSeparator />
+        <CommandGroup heading="Settings">
+          <CommandItem>Profile</CommandItem>
+        </CommandGroup>
+      </CommandList>
+    </Command>
+  )
+}
+
 export function CommandDemo() {
   return (
     <Command className="rounded-lg border shadow-md">

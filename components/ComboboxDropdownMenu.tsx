@@ -36,13 +36,13 @@ const labels = [
   "maintenance",
 ]
 
-export function CommandDropdownMenu() {
+export function ComboboxDropdownMenu() {
   const [label, setLabel] = React.useState("feature")
   const [open, setOpen] = React.useState(false)
 
   return (
-    // <div className="flex w-full flex-col items-start justify-between rounded-md border px-4 py-3 sm:flex-row sm:items-center">
-    <div className="flex w-[500px] flex-col items-start justify-between rounded-md border px-4 py-3 sm:flex-row sm:items-center">
+    // sm:flex-row sm:items-center
+    <div className="flex w-full flex-row items-center justify-between rounded-md border px-4 py-3 ">
       <p className="text-sm font-medium leading-none">
         <span className="mr-2 rounded-lg bg-primary px-2 py-1 text-xs text-primary-foreground">
           {label}
