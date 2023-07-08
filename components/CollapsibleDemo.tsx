@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { ChevronsUpDown, Plus, X } from "lucide-react"
+import { ChevronDown, ChevronUp, ChevronsDownUp, ChevronsUpDown, Plus, X } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -10,20 +10,40 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible"
 
+export function CollapsibleSimple() {
+  return (
+    <Collapsible>
+      <CollapsibleTrigger>Can I use this in my project?</CollapsibleTrigger>
+      <CollapsibleContent>
+        Yes. Free to use for personal and commercial projects. No attribution
+        required.
+      </CollapsibleContent>
+    </Collapsible>
+  )
+}
+
+export function CollapsibleCustom() {
+  const [isOpen, setIsOpen] = React.useState(false)
+  return (
+    <Collapsible
+    open={isOpen}
+        onOpenChange={setIsOpen}
+    >
+      <CollapsibleTrigger className="flex gap-4">点击查看更多内容
+      {isOpen ? <ChevronUp className="h-5 w-5"/> : <ChevronDown className="h-5 w-5"/>}
+      </CollapsibleTrigger>
+      <CollapsibleContent>
+        壹贰叁肆伍陆柒捌玖拾壹贰叁肆伍陆柒捌玖拾壹贰叁肆伍陆柒捌玖拾壹贰叁肆伍陆柒捌玖拾
+      </CollapsibleContent>
+    </Collapsible>
+  )
+}
+
 export function CollapsibleDemo() {
   const [isOpen, setIsOpen] = React.useState(false)
 
   return (
     <div className="flex flex-col gap-4">
-      {/* easy eg */}
-      <Collapsible>
-        <CollapsibleTrigger className="flex items-center gap-4">Can I use this in my project? <ChevronsUpDown className="h-4 w-4" /></CollapsibleTrigger>
-        <CollapsibleContent>
-          Yes. Free to use for personal and commercial projects. No attribution
-          required.
-        </CollapsibleContent>
-      </Collapsible>
-
       <Collapsible
         open={isOpen}
         onOpenChange={setIsOpen}
@@ -35,7 +55,11 @@ export function CollapsibleDemo() {
           </h4>
           <CollapsibleTrigger asChild>
             <Button variant="ghost" size="sm" className="w-9 p-0">
-              <ChevronsUpDown className="h-4 w-4" />
+              {isOpen ? (
+                <ChevronsDownUp className="h-4 w-4" />
+              ) : (
+                <ChevronsUpDown className="h-4 w-4" />
+              )}
               <span className="sr-only">Toggle</span>
             </Button>
           </CollapsibleTrigger>
@@ -50,15 +74,6 @@ export function CollapsibleDemo() {
           <div className="rounded-md border px-4 py-3 font-mono text-sm">
             @stitches/react
           </div>
-        </CollapsibleContent>
-      </Collapsible>
-
-      <Collapsible>
-        <CollapsibleTrigger>
-          点击查看更多内容 ↓
-        </CollapsibleTrigger>
-        <CollapsibleContent>
-        壹贰叁肆伍陆柒捌玖拾壹贰叁肆伍陆柒捌玖拾壹贰叁肆伍陆柒捌玖拾壹贰叁肆伍陆柒捌玖拾
         </CollapsibleContent>
       </Collapsible>
     </div>

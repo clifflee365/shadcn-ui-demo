@@ -17,8 +17,8 @@ import { CalendarDateRangePicker } from "@/components/CalendarDateRangePickerDem
 import { CalendarDemo } from "@/components/CalendarDemo"
 import { CardExample } from "@/components/CardExample"
 import { CardWithForm } from "@/components/CardWithFormDemo"
-import { CheckboxDemo } from "@/components/CheckboxDmeo"
-import { CollapsibleDemo } from "@/components/CollapsibleDemo"
+import { CheckboxDemo, CheckboxDisabled, CheckboxWithText } from "@/components/CheckboxDmeo"
+import { CollapsibleCustom, CollapsibleDemo, CollapsibleSimple } from "@/components/CollapsibleDemo"
 import { CommandCombobox } from "@/components/CommandComboboxDemo"
 import { CommandDemo } from "@/components/CommandDemo"
 import { CommandDialogDemo } from "@/components/CommandDialogDemo"
@@ -74,6 +74,8 @@ import {
 import { TooltipDemo } from "@/components/TooltipDemo"
 import { CalendarForm } from "@/components/CalendarForm"
 import { CardSimple } from "@/components/CardSimple"
+import { CheckboxReactHookFormSingle } from "@/components/CheckboxReactHookFormSingle"
+import { CheckboxReactHookFormMultiple } from "@/components/CheckboxReactHookFormMultiple"
 
 export default function IndexPage() {
   return (
@@ -177,22 +179,32 @@ export default function IndexPage() {
         </div>
       </Box>
 
-{/*
       <Box
         title="Checkbox"
         desc="A control that allows the user to toggle between checked and not checked."
-      >
+        contentClassName="flex flex-col gap-4"
+        >
         <CheckboxDemo />
+        <CheckboxWithText/>
+        <CheckboxDisabled/>
+        <Separator/>
+        <CheckboxReactHookFormSingle/>
+        <Separator/>
+        <CheckboxReactHookFormMultiple/>
       </Box>
 
       <Box
         title="Collapsible"
         desc="An interactive component which expands/collapses a panel."
         className="min-h-[400px]"
-      >
-        <CollapsibleDemo />
+        contentClassName="flex flex-col gap-4"
+        >
+          <CollapsibleSimple/>
+          <CollapsibleCustom/>
+          <CollapsibleDemo />
       </Box>
 
+        {/*
       <Box
         title="Command K"
         desc="Fast, composable, unstyled command menu for React."
