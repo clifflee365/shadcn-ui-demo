@@ -17,7 +17,7 @@ import {
 export function ContextMenuDemo() {
   return (
     <ContextMenu>
-      <ContextMenuTrigger className="flex h-[150px] w-[300px] items-center justify-center rounded-md border border-dashed text-sm">
+      <ContextMenuTrigger className="flex h-[150px] w-[200px] items-center justify-center rounded-md border border-dashed bg-muted text-sm">
         Right click here 右键点击
       </ContextMenuTrigger>
       <ContextMenuContent className="w-64">
@@ -63,7 +63,7 @@ export function ContextMenuDemo() {
         </ContextMenuRadioGroup>
         <ContextMenuSeparator />
         <ContextMenuItem inset>
-          收藏 <ContextMenuShortcut>⌘S</ContextMenuShortcut>
+          收藏 <ContextMenuShortcut>⌘D</ContextMenuShortcut>
         </ContextMenuItem>
       </ContextMenuContent>
     </ContextMenu>

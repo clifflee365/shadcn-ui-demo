@@ -85,6 +85,7 @@ import {
   ToggleWithText,
 } from "@/components/ToggleDemo"
 import { TooltipDemo } from "@/components/TooltipDemo"
+import { ContextMenuSimple } from "@/components/ContextMenuSimple"
 
 export default function IndexPage() {
   return (
@@ -242,14 +243,16 @@ export default function IndexPage() {
           <CommandMenu />
         </div>
       </Box>
-      {/*
       <Box
         title="Context Menu"
         desc="Displays a menu to the user — such as a set of actions or functions — triggered by a button."
-      >
-        <ContextMenuDemo />
+        contentClassName="space-y-4"
+        >
+          <ContextMenuSimple/>
+          <ContextMenuDemo />
       </Box>
 
+        {/*
       <Box
         title="Dialog"
         desc="A window overlaid on either the primary window or another dialog window, rendering the content underneath inert."
