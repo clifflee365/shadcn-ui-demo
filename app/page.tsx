@@ -51,7 +51,14 @@ import { DropdownMenuDemo } from "@/components/DropdownMenuDemo"
 import { DropdownMenuRadioGroupDemo } from "@/components/DropdownMenuRadioGroupDemo"
 import { DropdownMenuSimpleDemo } from "@/components/DropdownMenuSimpleDemo"
 import { HoverCardDemo, HoverCardSimple } from "@/components/HoverCardDemo"
-import { InputDemo, InputDisabled, InputFile, InputWithButton, InputWithLabel, InputWithLabelAndDesc } from "@/components/InputDemo"
+import {
+  InputDemo,
+  InputDisabled,
+  InputFile,
+  InputWithButton,
+  InputWithLabel,
+  InputWithLabelAndDesc,
+} from "@/components/InputDemo"
 import { LabelDemo, LabelDemoAssociateInput } from "@/components/LabelDemo"
 import { MenubarDemo } from "@/components/MenubarDemo"
 import { MenubarSimpleDemo } from "@/components/MenubarSimpleDemo"
@@ -60,14 +67,17 @@ import { NavigationMenuSimpleDemo } from "@/components/NavigationMenuSimpleDemo"
 import { PopoverDemo, PopoverDemo2 } from "@/components/PopoverDemo"
 import { ProgressDemo, ProgressDemoAnimate } from "@/components/ProgressDemo"
 import { RadioGroupDemo } from "@/components/RadioGroupDemo"
+import { RadioGroupForm } from "@/components/RadioGroupForm"
 import { ScrollAreaDemo, ScrollAreaDemo2 } from "@/components/ScrollAreaDemo"
 import { SelectDemo, SelectDemo2 } from "@/components/SelectDemo"
+import { SelectForm } from "@/components/SelectForm"
 import { SeparatorDemo, SeparatorDemo2 } from "@/components/SeparatorDemo"
 import { SheetChangeSizeDemo, SheetDemo } from "@/components/SheetDemo"
 import { SheetExamples } from "@/components/SheetExamples"
 import { SkeletonDemo, SkeletonDemo2 } from "@/components/SkeletonDemo"
-import { SliderDemo } from "@/components/SliderDemo"
+import { SliderDemo, SliderDemo2 } from "@/components/SliderDemo"
 import { SwitchDemo, SwitchDemo2 } from "@/components/SwitchDemo"
+import { SwitchForm } from "@/components/SwitchForm"
 import { TableDemo, TableDemo2 } from "@/components/TableDemo"
 import { TabsDemo, TabsDemo2 } from "@/components/TabsDemo"
 import {
@@ -90,9 +100,8 @@ import {
   ToggleSm,
   ToggleWithText,
 } from "@/components/ToggleDemo"
-import { TooltipDemo } from "@/components/TooltipDemo"
-import { RadioGroupForm } from "@/components/RadioGroupForm"
-import { SelectForm } from "@/components/SelectForm"
+import { TooltipDemo, TooltipDemoSide } from "@/components/TooltipDemo"
+import { TextareaForm } from "@/components/TextareaForm"
 
 export default function IndexPage() {
   return (
@@ -287,7 +296,7 @@ export default function IndexPage() {
         desc="For sighted users to preview content available behind a link."
         contentClassName="flex justify-around items-center gap-4"
       >
-        <HoverCardSimple/>
+        <HoverCardSimple />
         <HoverCardDemo />
       </Box>
 
@@ -295,15 +304,14 @@ export default function IndexPage() {
         title="Input"
         desc="Displays a form input field or a component that looks like an input field."
         contentClassName="flex flex-col gap-3"
-        >
+      >
         <InputDemo />
-        <InputFile/>
-        <InputDisabled/>
-        <InputWithLabel/>
-        <InputWithLabelAndDesc/>
-        <InputWithButton/>
+        <InputFile />
+        <InputDisabled />
+        <InputWithLabel />
+        <InputWithLabelAndDesc />
+        <InputWithButton />
       </Box>
-
 
       <Box
         title="Label"
@@ -311,7 +319,7 @@ export default function IndexPage() {
         contentClassName="flex flex-col gap-3"
       >
         <LabelDemo />
-        <LabelDemoAssociateInput/>
+        <LabelDemoAssociateInput />
       </Box>
 
       <Box
@@ -327,12 +335,10 @@ export default function IndexPage() {
         title="Navigation Menu"
         desc="A collection of links for navigating websites."
         contentClassName="flex flex-col gap-4"
-
       >
         <NavigationMenuSimpleDemo />
         <NavigationMenuDemo />
       </Box>
-
 
       <Box
         title="Popover"
@@ -358,7 +364,7 @@ export default function IndexPage() {
         contentClassName="flex flex-col space-y-4"
       >
         <RadioGroupDemo />
-        <RadioGroupForm/>
+        <RadioGroupForm />
       </Box>
 
       <Box
@@ -377,8 +383,8 @@ export default function IndexPage() {
       >
         <SelectDemo />
         <SelectDemo2 />
-        <Separator/>
-        <SelectForm/>
+        <Separator />
+        <SelectForm />
       </Box>
 
       <Box title="Separator" desc="Visually or semantically separates content.">
@@ -400,7 +406,7 @@ export default function IndexPage() {
         <SheetChangeSizeDemo />
         <SheetExamples />
       </Box>
-{/*
+
       <Box
         title="Skeleton"
         desc="Use to show a placeholder while content is loading."
@@ -414,17 +420,24 @@ export default function IndexPage() {
       <Box
         title="Slider"
         desc="An input where the user selects a value from within a given range."
+        contentClassName="flex flex-col space-y-6"
       >
         <SliderDemo />
+        <SliderDemo2 />
       </Box>
 
       <Box
         title="Switch"
         desc="A control that allows the user to toggle between checked and not checked."
-        contentClassName="flex space-x-4"
+        contentClassName="flex flex-col space-y-4"
       >
-        <SwitchDemo />
-        <SwitchDemo2 />
+        <div className="flex items-center space-x-4 rounded-md border p-4">
+          <SwitchDemo />
+          <Separator orientation="vertical" className="h-3"/>
+          <SwitchDemo2 />
+        </div>
+
+        <SwitchForm />
       </Box>
 
       <Box title="Table" desc="A responsive table component.">
@@ -435,6 +448,7 @@ export default function IndexPage() {
       <Box
         title="Tabs"
         desc="A set of layered sections of content—known as tab panels—that are displayed one at a time.一组分层的内容部分，被称为选项卡面板，一次只显示一个。"
+        contentClassName="space-y-4"
       >
         <TabsDemo />
         <TabsDemo2 />
@@ -449,7 +463,9 @@ export default function IndexPage() {
         <TextareaWithLabel />
         <TextareaWithText />
         <TextareaWithButton />
+        <TextareaForm/>
       </Box>
+
 
       <Box
         title="Toast"
@@ -469,7 +485,6 @@ export default function IndexPage() {
           </Link>
         </div>
       </Box>
-
       <Box
         title="Toggle"
         desc="A two-state button that can be either on or off."
@@ -483,13 +498,16 @@ export default function IndexPage() {
         <ToggleDisabled />
       </Box>
 
+
       <Box
         title="Tooltip"
         desc="A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.
       Radix UI"
+      contentClassName="space-x-4"
       >
         <TooltipDemo />
-      </Box> */}
+        <TooltipDemoSide/>
+      </Box>
     </section>
   )
 }

@@ -5,7 +5,7 @@ import { Skeleton } from "@/components/ui/skeleton"
 export function SkeletonDemo(){
   return (
     <div className="flex flex-col gap-3">
-    <Skeleton className="h-[30px] w-[200px] " />
+    <Skeleton className="h-[20px] w-[200px] " />
     <Skeleton className="h-[20px] w-[100px] rounded-full" />
     </div>
   )

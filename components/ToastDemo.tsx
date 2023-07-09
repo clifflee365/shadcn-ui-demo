@@ -42,6 +42,13 @@ export function ToastSimple() {
 
 export function ToastWithAction() {
   const { toast } = useToast()
+  const handleAction = () => {
+    toast({
+      title: '✅ Tray ok',
+      duration: 3000,
+      // description: 'Toast Try again'
+    })
+  }
 
   return (
     <Button
@@ -50,7 +57,7 @@ export function ToastWithAction() {
         toast({
           title: "Uh oh! Something went wrong.",
           description: "There was a problem with your request.",
-          action: <ToastAction altText="Try again">Try again</ToastAction>,
+          action: <ToastAction altText="Try again" onClick={handleAction}>Try again</ToastAction>,
         })
       }}
     >
