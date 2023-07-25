@@ -104,6 +104,7 @@ import { TooltipDemo, TooltipDemoSide } from "@/components/TooltipDemo"
 import { TextareaForm } from "@/components/TextareaForm"
 import FormDemo from "@/components/FormDemo"
 import FormSimpleDemo from "@/components/FormSimpleDemo"
+import DataTableDemo from "@/components/DataTable/DataTableDemo"
 
 export default function IndexPage() {
   return (
@@ -258,7 +259,12 @@ export default function IndexPage() {
         <ContextMenuSimple />
         <ContextMenuDemo />
       </Box>
-      {/* todo Data Table */}
+      <Box
+        title="Data Table"
+        desc="Powerful table and datagrids built using TanStack Table."
+      >
+        <DataTableDemo/>
+      </Box>
       <Box
         title="Date Picker"
         desc="A date picker component with range and presets."
