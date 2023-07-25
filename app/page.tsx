@@ -102,6 +102,8 @@ import {
 } from "@/components/ToggleDemo"
 import { TooltipDemo, TooltipDemoSide } from "@/components/TooltipDemo"
 import { TextareaForm } from "@/components/TextareaForm"
+import FormDemo from "@/components/FormDemo"
+import FormSimpleDemo from "@/components/FormSimpleDemo"
 
 export default function IndexPage() {
   return (
@@ -291,6 +293,13 @@ export default function IndexPage() {
         </div>
       </Box>
       {/* todo Form */}
+      <Box title="Form"
+        desc="Building forms with React Hook Form and Zod."
+        contentClassName="flex flex-col gap-4"
+      >
+        <FormSimpleDemo/>
+        <FormDemo/>
+      </Box>
       <Box
         title="Hover Card"
         desc="For sighted users to preview content available behind a link."
