@@ -363,7 +363,7 @@ const FormDemo = () => {
           name="language"
           render={({ field }) => (
             <FormItem className="flex flex-col">
-              <FormLabel>Language</FormLabel>
+              <FormLabel>Language(Form-Combobox)</FormLabel>
               <Popover>
                 <PopoverTrigger asChild>
                   <FormControl>

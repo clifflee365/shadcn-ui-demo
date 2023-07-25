@@ -55,7 +55,7 @@ export function CalendarForm() {
           name="dob"
           render={({ field }) => (
             <FormItem className="flex flex-col">
-              <FormLabel>Date of birth</FormLabel>
+              <FormLabel>Date of birth(Form-date case)</FormLabel>
               <Popover>
                 <PopoverTrigger asChild>
                   <FormControl>

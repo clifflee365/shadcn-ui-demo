@@ -46,7 +46,7 @@ export function RadioGroupForm() {
           name="type"
           render={({ field }) => (
             <FormItem className="space-y-3">
-              <FormLabel>Notify me about...</FormLabel>
+              <FormLabel>Notify me about...(Form-RadioGroup )</FormLabel>
               <FormControl>
                 <RadioGroup
                   onValueChange={field.onChange}

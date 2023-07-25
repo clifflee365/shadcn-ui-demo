@@ -78,7 +78,7 @@ export function CheckboxReactHookFormMultiple() {
           render={() => (
             <FormItem>
               <div className="mb-4">
-                <FormLabel className="text-base">Sidebar</FormLabel>
+                <FormLabel className="text-base">Sidebar(Form-checkbox case2)</FormLabel>
                 <FormDescription>
                   Select the items you want to display in the sidebar.
                 </FormDescription>
