@@ -1,3 +1,4 @@
+
 import { Payment, columns } from "./columns"
 import { DataTable } from "./data-table"
 
