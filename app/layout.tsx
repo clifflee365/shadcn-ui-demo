@@ -43,7 +43,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           )}
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <div className="relative flex min-h-screen flex-col">
+            <div className="relative flex min-h-screen flex-col bg-background" vaul-drawer-wrapper="">
               <SiteHeader />
               <div className="flex-1">{children}</div>
 

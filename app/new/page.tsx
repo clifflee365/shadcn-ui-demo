@@ -1,6 +1,5 @@
 import React from "react"
 
-
 import Box from "@/components/Box"
 import {
   CarouselAPIDemo,
@@ -9,6 +8,8 @@ import {
   CarouselSize,
   CarouselSpacing,
 } from "@/components/CarouselDemo"
+import { DrawerDemo, DrawerDemoWithChart } from "@/components/DrawerDemo"
+import { DrawerDialogDemo } from "@/components/DrawerDialogDemo"
 
 const NewComponents = () => {
   return (
@@ -24,7 +25,20 @@ const NewComponents = () => {
         <div className="w-full max-w-xs py-8">
           <CarouselOrientation />
         </div>
-        <CarouselAPIDemo/>
+        <CarouselAPIDemo />
+      </Box>
+      <Box title="Drawer" desc="A drawer component for React." contentClassName="flex flex-col gap-2">
+        <DrawerDemoWithChart />
+        <DrawerDemo />
+        <div className="flex flex-col gap-2">
+          <h3>Responsive Dialog</h3>
+          <p>
+            You can combine the Dialog and Drawer components to create a
+            responsive dialog. This renders a Dialog component on desktop and a
+            Drawer on mobile.
+          </p>
+          <DrawerDialogDemo />
+        </div>
       </Box>
     </div>
   )
