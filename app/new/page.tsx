@@ -10,6 +10,7 @@ import {
 } from "@/components/CarouselDemo"
 import { DrawerDemo, DrawerDemoWithChart } from "@/components/DrawerDemo"
 import { DrawerDialogDemo } from "@/components/DrawerDialogDemo"
+import { PaginationDemo } from "@/components/PaginationDemo"
 
 const NewComponents = () => {
   return (
@@ -27,7 +28,11 @@ const NewComponents = () => {
         </div>
         <CarouselAPIDemo />
       </Box>
-      <Box title="Drawer" desc="A drawer component for React." contentClassName="flex flex-col gap-2">
+      <Box
+        title="Drawer"
+        desc="A drawer component for React."
+        contentClassName="flex flex-col gap-2"
+      >
         <DrawerDemoWithChart />
         <DrawerDemo />
         <div className="flex flex-col gap-2">
@@ -39,6 +44,13 @@ const NewComponents = () => {
           </p>
           <DrawerDialogDemo />
         </div>
+      </Box>
+
+      <Box
+        title="Pagination"
+        desc="Pagination with page navigation, next and previous links."
+      >
+        <PaginationDemo />
       </Box>
     </div>
   )
