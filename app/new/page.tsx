@@ -11,6 +11,8 @@ import {
 import { DrawerDemo, DrawerDemoWithChart } from "@/components/DrawerDemo"
 import { DrawerDialogDemo } from "@/components/DrawerDialogDemo"
 import { PaginationDemo } from "@/components/PaginationDemo"
+import { ResizableDemo, ResizableDirection, ResizableWithHandleDemo } from "@/components/ResizableDemo"
+import { Checkbox } from "@/components/ui/checkbox"
 
 const NewComponents = () => {
   return (
@@ -51,6 +53,19 @@ const NewComponents = () => {
         desc="Pagination with page navigation, next and previous links."
       >
         <PaginationDemo />
+      </Box>
+
+      <Box
+        title="Resizable"
+        desc="Accessible resizable panel groups and layouts with keyboard support"
+        contentClassName="flex flex-col gap-6"
+      >
+        <ResizableDemo/>
+        <ResizableDirection/>
+        <ResizableWithHandleDemo/>
+        <div className="flex items-center gap-2">
+          <Checkbox/> TODO-研究如何限制可拖拽的最小和最大尺寸
+        </div>
       </Box>
     </div>
   )
