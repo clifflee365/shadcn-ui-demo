@@ -13,6 +13,7 @@ import { DrawerDialogDemo } from "@/components/DrawerDialogDemo"
 import { PaginationDemo } from "@/components/PaginationDemo"
 import { ResizableDemo, ResizableDirection, ResizableWithHandleDemo } from "@/components/ResizableDemo"
 import { Checkbox } from "@/components/ui/checkbox"
+import { SonnerDemo } from "@/components/SonnerDemo"
 
 const NewComponents = () => {
   return (
@@ -66,6 +67,13 @@ const NewComponents = () => {
         <div className="flex items-center gap-2">
           <Checkbox/> TODO-研究如何限制可拖拽的最小和最大尺寸
         </div>
+      </Box>
+
+      <Box
+        title="Sonner"
+        desc="An opinionated toast component for React."
+      >
+        <SonnerDemo/>
       </Box>
     </div>
   )

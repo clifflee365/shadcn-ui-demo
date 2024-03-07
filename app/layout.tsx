@@ -9,6 +9,7 @@ import { Toaster } from "@/components/ui/toaster"
 import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
+import { Toaster as ToasterSonner } from "@/components/ui/sonner"
 
 export const metadata: Metadata = {
   title: {
@@ -48,6 +49,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <div className="flex-1">{children}</div>
 
               <Toaster />
+              <ToasterSonner/>
             </div>
             {/* <TailwindIndicator /> */}
           </ThemeProvider>
