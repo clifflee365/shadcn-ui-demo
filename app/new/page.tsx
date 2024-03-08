@@ -15,6 +15,9 @@ import { ResizableDemo, ResizableDirection, ResizableWithHandleDemo } from "@/co
 import { Checkbox } from "@/components/ui/checkbox"
 import { SonnerDemo } from "@/components/SonnerDemo"
 import { BreadcrumbDemo, BreadcrumbDemoBasic, BreadcrumbLinkAsChild, BreadcrumbWithCustomSeparator, BreadcrumbWithDropdown } from "@/components/BreadcrumbDemo"
+import { InputOTPControlled, InputOTPDemo, InputOTPPattern, InputOTPWithSeparator } from "@/components/InputOTPDemo"
+import { Separator } from "@/components/ui/separator"
+import { InputOTPForm } from "@/components/InputOTPForm"
 
 const NewComponents = () => {
   return (
@@ -87,6 +90,19 @@ const NewComponents = () => {
         <BreadcrumbWithCustomSeparator/>
         <BreadcrumbWithDropdown/>
         <BreadcrumbLinkAsChild/>
+      </Box>
+
+      <Box
+        title="Input OTP"
+        desc="Accessible one-time password component with copy paste functionality."
+        contentClassName="flex flex-col gap-6"
+      >
+        <InputOTPDemo/>
+        <InputOTPPattern/>
+        <InputOTPWithSeparator/>
+        <InputOTPControlled/>
+        <Separator/>
+        <InputOTPForm/>
       </Box>
     </div>
   )
