@@ -14,6 +14,7 @@ import { PaginationDemo } from "@/components/PaginationDemo"
 import { ResizableDemo, ResizableDirection, ResizableWithHandleDemo } from "@/components/ResizableDemo"
 import { Checkbox } from "@/components/ui/checkbox"
 import { SonnerDemo } from "@/components/SonnerDemo"
+import { BreadcrumbDemo, BreadcrumbDemoBasic, BreadcrumbLinkAsChild, BreadcrumbWithCustomSeparator, BreadcrumbWithDropdown } from "@/components/BreadcrumbDemo"
 
 const NewComponents = () => {
   return (
@@ -74,6 +75,18 @@ const NewComponents = () => {
         desc="An opinionated toast component for React."
       >
         <SonnerDemo/>
+      </Box>
+
+      <Box
+        title="Breadcrumb"
+        desc="Displays the path to the current resource using a hierarchy of links."
+        contentClassName="flex flex-col gap-6"
+      >
+        <BreadcrumbDemo/>
+        <BreadcrumbDemoBasic/>
+        <BreadcrumbWithCustomSeparator/>
+        <BreadcrumbWithDropdown/>
+        <BreadcrumbLinkAsChild/>
       </Box>
     </div>
   )
