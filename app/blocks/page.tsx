@@ -1,14 +1,19 @@
 import React from "react"
 
+import Box from "@/components/Box"
+
 import { LoginForm } from "./Authentication01"
+import { LoginForm2 } from "./Authentication02"
 
 const BlocksPage = () => {
   return (
-    <div className="p-10">
-      <h1 className="mb-8 text-xl font-semibold">authentication-01</h1>
-      <div className="relative flex items-center justify-center rounded-lg border border-border bg-background p-10">
+    <div className="container grid items-center gap-6 pb-8 pt-6 md:p-8">
+      <Box title="Authentication-01" contentClassName="flex justify-center">
         <LoginForm />
-      </div>
+      </Box>
+      <Box title="Authentication-02" desc="login with google ">
+        <LoginForm2 />
+      </Box>
     </div>
   )
 }
