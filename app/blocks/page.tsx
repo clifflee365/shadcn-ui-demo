@@ -4,6 +4,7 @@ import Box from "@/components/Box"
 
 import { LoginForm } from "./Authentication01"
 import { LoginForm2 } from "./Authentication02"
+import { LoginForm3 } from "./Authentication03"
 
 const BlocksPage = () => {
   return (
@@ -13,6 +14,9 @@ const BlocksPage = () => {
       </Box>
       <Box title="Authentication-02" desc="login with google ">
         <LoginForm2 />
+      </Box>
+      <Box title="Authentication-03" desc="with first name and last name ">
+        <LoginForm3 />
       </Box>
     </div>
   )
