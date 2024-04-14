@@ -6,6 +6,7 @@ import { LoginForm } from "./Authentication01"
 import { LoginForm2 } from "./Authentication02"
 import { LoginForm3 } from "./Authentication03"
 import { LoginForm4 } from "./Authentication04"
+import { Dashboard01 } from "./Dashboard01"
 
 const BlocksPage = () => {
   return (
@@ -21,6 +22,9 @@ const BlocksPage = () => {
       </Box>
       <Box title="Authentication-04" desc="with image">
         <LoginForm4/>
+      </Box>
+      <Box title="Dashboard-01" hasContentBorder>
+        <Dashboard01/>
       </Box>
     </div>
   )
