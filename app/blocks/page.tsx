@@ -10,6 +10,7 @@ import { LoginForm4 } from "./Authentication04"
 import { Dashboard01 } from "./Dashboard01"
 import { Dashboard02 } from "./Dashboard02"
 import { Dashboard03 } from "./Dashboard03"
+import { Dashboard04 } from "./Dashboard04"
 
 const BlocksPage = () => {
   return (
@@ -37,6 +38,9 @@ const BlocksPage = () => {
           <Dashboard03 />
         </Box>
       </TooltipProvider>
+      <Box title="Dashboard-04" hasContentBorder desc="">
+        <Dashboard04 />
+      </Box>
     </div>
   )
 }
