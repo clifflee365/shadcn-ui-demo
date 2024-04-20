@@ -12,6 +12,7 @@ import { Dashboard03 } from "./Dashboard03"
 import { Dashboard04 } from "./Dashboard04"
 import { Dashboard05 } from "./Dashboard05"
 import { Dashboard06 } from "./Dashboard06"
+import { Dashboard07 } from "./Dashboard07"
 
 const BlocksPage = () => {
   return (
@@ -28,26 +29,30 @@ const BlocksPage = () => {
       <Box title="Authentication-04" desc="with image">
         <LoginForm4 />
       </Box>
-      <Box title="Dashboard-01" hasContentBorder>
+      <Box title="Dashboard-01" hasContentBorder hideBorder>
         <Dashboard01 />
       </Box>
-      <Box title="Dashboard-02" hasContentBorder desc="">
+      <Box title="Dashboard-02" hasContentBorder hideBorder>
         <Dashboard02 />
       </Box>
-      <Box title="Dashboard-03" hasContentBorder desc="">
+      <Box title="Dashboard-03" hasContentBorder hideBorder>
         <Dashboard03 />
       </Box>
 
-      <Box title="Dashboard-04" hasContentBorder desc="">
+      <Box title="Dashboard-04" hasContentBorder hideBorder>
         <Dashboard04 />
       </Box>
 
-      <Box title="Dashboard-05" hasContentBorder desc="">
+      <Box title="Dashboard-05" hasContentBorder hideBorder>
         <Dashboard05 />
       </Box>
 
-      <Box title="Dashboard-06" hasContentBorder desc="">
+      <Box title="Dashboard-06" hasContentBorder hideBorder>
         <Dashboard06 />
+      </Box>
+
+      <Box title="Dashboard-07" hasContentBorder hideBorder>
+        <Dashboard07 />
       </Box>
     </div>
   )
