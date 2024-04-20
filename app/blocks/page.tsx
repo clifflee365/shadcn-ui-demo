@@ -1,6 +1,5 @@
 import React from "react"
 
-import { TooltipProvider } from "@/components/ui/tooltip"
 import Box from "@/components/Box"
 
 import { LoginForm } from "./Authentication01"
@@ -12,6 +11,7 @@ import { Dashboard02 } from "./Dashboard02"
 import { Dashboard03 } from "./Dashboard03"
 import { Dashboard04 } from "./Dashboard04"
 import { Dashboard05 } from "./Dashboard05"
+import { Dashboard06 } from "./Dashboard06"
 
 const BlocksPage = () => {
   return (
@@ -34,19 +34,21 @@ const BlocksPage = () => {
       <Box title="Dashboard-02" hasContentBorder desc="">
         <Dashboard02 />
       </Box>
-      <TooltipProvider>
-        <Box title="Dashboard-03" hasContentBorder desc="">
-          <Dashboard03 />
-        </Box>
-      </TooltipProvider>
+      <Box title="Dashboard-03" hasContentBorder desc="">
+        <Dashboard03 />
+      </Box>
+
       <Box title="Dashboard-04" hasContentBorder desc="">
         <Dashboard04 />
       </Box>
-      <TooltipProvider>
-        <Box title="Dashboard-05" hasContentBorder desc="">
-          <Dashboard05 />
-        </Box>
-      </TooltipProvider>
+
+      <Box title="Dashboard-05" hasContentBorder desc="">
+        <Dashboard05 />
+      </Box>
+
+      <Box title="Dashboard-06" hasContentBorder desc="">
+        <Dashboard06 />
+      </Box>
     </div>
   )
 }
