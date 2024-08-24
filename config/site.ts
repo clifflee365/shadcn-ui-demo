@@ -15,7 +15,11 @@ export const siteConfig = {
     },
     {
       title: "Blocks",
-      href:  "/blocks"
+      href: "/blocks"
+    },
+    {
+      title: "Charts",
+      href: "/charts"
     }
   ],
   links: {
